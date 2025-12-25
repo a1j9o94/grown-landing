@@ -29,6 +29,23 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Database Setup (Vercel Postgres)
+
+The subscription form saves emails to Vercel Postgres. To set this up:
+
+1. Deploy your project to Vercel
+2. Go to your project in the Vercel dashboard
+3. Click on the "Storage" tab
+4. Click "Create Database" → "Postgres"
+5. Follow the prompts to create the database
+6. Vercel will automatically add the required environment variables
+
+The database table will be created automatically on first use.
+
+### Admin Page
+
+View all subscribers at `/admin/subscribers`
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

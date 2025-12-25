@@ -1,0 +1,21 @@
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../app/generated/prisma-client"
+}
+
+model Subscriber {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  interests String
+  zip       String?
+  source    String   @default("landing")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("subscribers")
+}
