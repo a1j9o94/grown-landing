@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Grown",
   description: "Get high like an adult.",
+  icons: {
+    icon: "/logo.ico",
+  },
 };
 
 export default function RootLayout({
