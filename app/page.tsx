@@ -285,18 +285,30 @@ export default function Page() {
                 </div>
               </div>
 
-              {/* Right: Visual */}
-              <div className="relative aspect-4/3 w-full overflow-hidden rounded-[32px] shadow-2xl shadow-[#2C3628]/10 lg:aspect-square">
-                 {/* Landing Image File */}
-                <Image
-                  src="/landing_image.png"
-                  alt="Grown lifestyle moodboard"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-                {/* Decorative overlay */}
-                <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-[32px]" />
+              {/* Right: Visual - Two Product Images */}
+              <div className="relative grid grid-cols-2 gap-4 lg:gap-6">
+                {/* Oil Image */}
+                <div className="relative aspect-[3/4] overflow-hidden rounded-[24px] shadow-2xl shadow-[#2C3628]/10">
+                  <Image
+                    src="/oil_image.png"
+                    alt="Grown Heirloom Oil - THC Infused"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                  <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-[24px]" />
+                </div>
+                {/* Salt Image */}
+                <div className="relative aspect-[3/4] overflow-hidden rounded-[24px] shadow-2xl shadow-[#2C3628]/10 translate-y-8">
+                  <Image
+                    src="/salt_image.png"
+                    alt="Grown Finishing Salt - THC Infused"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                  <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-[24px]" />
+                </div>
               </div>
 
             </div>
@@ -305,31 +317,49 @@ export default function Page() {
           {/* Product Showcase (The Pantry) */}
           <section id="products" className="grid gap-8 md:grid-cols-2">
             {/* Oil Card */}
-            <div className="group relative overflow-hidden rounded-[32px] bg-[#E8EAE4] p-8 transition-all hover:shadow-xl hover:shadow-[#2C3628]/5 md:p-12">
-              <div className="relative z-10">
+            <div className="group relative overflow-hidden rounded-[32px] bg-[#E8EAE4] transition-all hover:shadow-xl hover:shadow-[#2C3628]/5">
+              {/* Product Image */}
+              <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <Image
+                  src="/oil_image.png"
+                  alt="Grown Heirloom Oil"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#E8EAE4] via-transparent to-transparent" />
+              </div>
+              <div className="relative z-10 p-8 md:p-10">
                 <div className="serif text-3xl text-[#2C3628]">Heirloom Oil</div>
                 <p className="mt-2 text-base text-[#2C3628]/70">For sautéing, roasting, and drizzling.</p>
-                <ul className="mt-8 space-y-3 text-sm text-[#2C3628]/80">
+                <ul className="mt-6 space-y-3 text-sm text-[#2C3628]/80">
                   <li className="flex items-center gap-3"><CheckIcon /> <span className="font-medium">5mg THC</span> per tsp</li>
                   <li className="flex items-center gap-3"><CheckIcon /> Cold-pressed olive blend</li>
                   <li className="flex items-center gap-3"><CheckIcon /> Zero &ldquo;weedy&rdquo; aftertaste</li>
                 </ul>
               </div>
-              <div className="absolute -bottom-12 -right-6 h-64 w-32 rotate-12 rounded-t-full bg-[#2C3628]/5" />
             </div>
 
             {/* Salt Card */}
-            <div className="group relative overflow-hidden rounded-[32px] bg-[#E6DBC6] p-8 transition-all hover:shadow-xl hover:shadow-[#B85C38]/10 md:p-12">
-              <div className="relative z-10">
+            <div className="group relative overflow-hidden rounded-[32px] bg-[#E6DBC6] transition-all hover:shadow-xl hover:shadow-[#B85C38]/10">
+              {/* Product Image */}
+              <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <Image
+                  src="/salt_image.png"
+                  alt="Grown Finishing Salt"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#E6DBC6] via-transparent to-transparent" />
+              </div>
+              <div className="relative z-10 p-8 md:p-10">
                 <div className="serif text-3xl text-[#2C3628]">Flake Salt</div>
                 <p className="mt-2 text-base text-[#2C3628]/70">The perfect finishing pinch.</p>
-                <ul className="mt-8 space-y-3 text-sm text-[#2C3628]/80">
+                <ul className="mt-6 space-y-3 text-sm text-[#2C3628]/80">
                   <li className="flex items-center gap-3"><CheckIcon /> <span className="font-medium">2mg THC</span> per pinch</li>
                   <li className="flex items-center gap-3"><CheckIcon /> Harvested grey sea salt</li>
                   <li className="flex items-center gap-3"><CheckIcon /> Fast-acting absorption</li>
                 </ul>
               </div>
-               <div className="absolute -bottom-12 -right-6 h-40 w-40 rounded-full bg-[#B85C38]/10" />
             </div>
           </section>
 
