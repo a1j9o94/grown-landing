@@ -21,34 +21,34 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 text-sm font-medium text-[#2C3628]/70 sm:flex">
+        <nav className="hidden items-center gap-8 sm:flex">
           <Link
             href="/products"
-            className="transition-colors hover:text-[#2C3628]"
+            className="serif text-[15px] text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
           >
             Products
           </Link>
           <Link
             href="/learn"
-            className="transition-colors hover:text-[#2C3628]"
+            className="serif text-[15px] text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
           >
             Learn
           </Link>
           <Link
             href="/recipes"
-            className="transition-colors hover:text-[#2C3628]"
+            className="serif text-[15px] text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
           >
             Recipes
           </Link>
           <Link
             href="/about"
-            className="transition-colors hover:text-[#2C3628]"
+            className="serif text-[15px] text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
           >
             About
           </Link>
           <Link
             href="/#waitlist"
-            className="serif italic text-[#B85C38] transition-colors hover:text-[#9A4A2B]"
+            className="serif text-[15px] italic text-[#B85C38] transition-colors hover:text-[#9A4A2B]"
           >
             Join the table
           </Link>
