@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -29,44 +30,84 @@ export default function AboutPage() {
           Our Philosophy
         </h2>
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="rounded-[24px] bg-white/50 p-8">
-            <h3 className="text-xl font-semibold text-[#2C3628]">
-              Ingredients First
-            </h3>
-            <p className="mt-3 text-[#2C3628]/70">
-              We start with premium cooking oils and finishing salts, then add
-              THC. Never the other way around. The result is a product you
-              actually want to cook with.
-            </p>
+          <div className="overflow-hidden rounded-[24px] bg-white/50">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src="/about/ingredients-first.png"
+                alt="Premium ingredients"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <h3 className="text-xl font-semibold text-[#2C3628]">
+                Ingredients First
+              </h3>
+              <p className="mt-3 text-[#2C3628]/70">
+                We start with premium cooking oils and finishing salts, then add
+                THC. Never the other way around. The result is a product you
+                actually want to cook with.
+              </p>
+            </div>
           </div>
-          <div className="rounded-[24px] bg-white/50 p-8">
-            <h3 className="text-xl font-semibold text-[#2C3628]">
-              Reliable Dosing
-            </h3>
-            <p className="mt-3 text-[#2C3628]/70">
-              No guesswork. Every teaspoon, every pinch delivers the same
-              experience. Because hosting a dinner party is stressful enough
-              without wondering if you overdid it.
-            </p>
+          <div className="overflow-hidden rounded-[24px] bg-white/50">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src="/about/reliable-dosing.png"
+                alt="Reliable dosing"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <h3 className="text-xl font-semibold text-[#2C3628]">
+                Reliable Dosing
+              </h3>
+              <p className="mt-3 text-[#2C3628]/70">
+                No guesswork. Every teaspoon, every pinch delivers the same
+                experience. Because hosting a dinner party is stressful enough
+                without wondering if you overdid it.
+              </p>
+            </div>
           </div>
-          <div className="rounded-[24px] bg-white/50 p-8">
-            <h3 className="text-xl font-semibold text-[#2C3628]">
-              Designed to Share
-            </h3>
-            <p className="mt-3 text-[#2C3628]/70">
-              Our products are made for meals, not solo sessions. The dosing,
-              the packaging, the recipes—everything is designed for the table.
-            </p>
+          <div className="overflow-hidden rounded-[24px] bg-white/50">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src="/about/for-sharing.png"
+                alt="Designed for sharing"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <h3 className="text-xl font-semibold text-[#2C3628]">
+                Designed to Share
+              </h3>
+              <p className="mt-3 text-[#2C3628]/70">
+                Our products are made for meals, not solo sessions. The dosing,
+                the packaging, the recipes—everything is designed for the table.
+              </p>
+            </div>
           </div>
-          <div className="rounded-[24px] bg-white/50 p-8">
-            <h3 className="text-xl font-semibold text-[#2C3628]">
-              Transparent Quality
-            </h3>
-            <p className="mt-3 text-[#2C3628]/70">
-              Third-party tested. No solvents. No junk. We believe if you
-              wouldn&apos;t cook with an ingredient sober, you shouldn&apos;t
-              cook with it elevated.
-            </p>
+          <div className="overflow-hidden rounded-[24px] bg-white/50">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src="/about/transparent-quality.png"
+                alt="Transparent quality"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <h3 className="text-xl font-semibold text-[#2C3628]">
+                Transparent Quality
+              </h3>
+              <p className="mt-3 text-[#2C3628]/70">
+                Third-party tested. No solvents. No junk. We believe if you
+                wouldn&apos;t cook with an ingredient sober, you shouldn&apos;t
+                cook with it elevated.
+              </p>
+            </div>
           </div>
         </div>
       </section>
