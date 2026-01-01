@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { socialLinks } from "../lib/socialLinks";
 
 export function Footer() {
   return (
@@ -13,6 +14,26 @@ export function Footer() {
             <p className="mt-4 text-sm text-[#2C3628]/60">
               Pantry staples for your unwind era.
             </p>
+            <div className="mt-6">
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+                Follow
+              </h4>
+              <div className="mt-3 flex flex-wrap gap-3 text-sm">
+                {socialLinks.map((social) => (
+                  <Link
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.ariaLabel}
+                    title={social.ariaLabel}
+                    className="inline-flex items-center rounded-full border border-[#2C3628]/15 px-3 py-1.5 text-[#2C3628]/70 transition-colors hover:border-[#2C3628]/30 hover:text-[#2C3628]"
+                  >
+                    {social.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Products */}

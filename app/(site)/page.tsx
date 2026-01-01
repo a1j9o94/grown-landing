@@ -3,6 +3,7 @@
 import React, { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { socialLinks } from "../lib/socialLinks";
 
 // --- Types & Utilities ---
 type Interest = "oil" | "salt";
@@ -298,9 +299,30 @@ export default function HomePage() {
           </button>
 
           {status === "success" && (
-            <div className="rounded-xl bg-[#D4D9CD]/30 p-4 text-center text-sm font-medium text-[#2C3628]">
-              <span className="serif italic">Cheers.</span> You&apos;re on the
-              list.
+            <div
+              className="space-y-3 rounded-xl bg-[#D4D9CD]/30 p-4 text-center text-sm font-medium text-[#2C3628]"
+              role="status"
+              aria-live="polite"
+            >
+              <div>
+                <span className="serif italic">Cheers.</span> You&apos;re on the
+                list. Follow Grown for launch drops and recipes.
+              </div>
+              <div className="flex flex-wrap justify-center gap-3 text-xs font-semibold">
+                {socialLinks.map((social) => (
+                  <Link
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.ariaLabel}
+                    title={social.ariaLabel}
+                    className="inline-flex items-center gap-1 rounded-full border border-[#2C3628]/20 bg-white/60 px-3 py-1.5 text-[#2C3628] transition-colors hover:border-[#2C3628]/40 hover:text-[#2C3628]/90"
+                  >
+                    {social.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           )}
 
