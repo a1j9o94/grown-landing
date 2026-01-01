@@ -27,6 +27,7 @@ export interface RecipeFrontmatter {
   slug: string;
   category: string;
   date: string;
+  featured?: boolean;
   image?: string;
   prepTime: string;
   cookTime: string;
