@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getLearnPostsByCategory } from "@/lib/content";
 
@@ -30,13 +31,31 @@ export default function LearnPage() {
 
   return (
     <div className="py-12 md:py-20">
-      {/* Hero */}
-      <div className="mb-16 text-center">
-        <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">Learn</h1>
-        <p className="mx-auto mt-4 max-w-xl text-lg text-[#2C3628]/70">
-          Guides and resources for cooking with THC. From timing basics to
-          flavor pairing, become a confident host.
-        </p>
+      {/* Hero with Background Image */}
+      <div className="relative mb-16 overflow-hidden rounded-[32px]">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/learning-hero-image.png"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2C3628]/60 via-[#2C3628]/50 to-[#2C3628]/70" />
+        </div>
+
+        {/* Content */}
+        <div className="relative px-6 py-16 text-center md:py-24 lg:py-32">
+          <h1 className="serif text-4xl text-[#F2F0E9] md:text-5xl lg:text-6xl">
+            Learn
+          </h1>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-[#F2F0E9]/80 md:text-xl">
+            Guides and resources for cooking with THC. From timing basics to
+            flavor pairing, become a confident host.
+          </p>
+        </div>
       </div>
 
       {/* Guides by Category */}
