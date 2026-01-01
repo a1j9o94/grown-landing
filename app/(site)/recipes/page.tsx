@@ -50,7 +50,7 @@ export default function RecipesPage() {
           <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
             Featured Recipes
           </h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuredRecipes.map((recipe) => (
               <RecipeCard key={recipe.slug} recipe={recipe} size="large" />
             ))}
@@ -63,7 +63,7 @@ export default function RecipesPage() {
         <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
           Browse by Category
         </h2>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {categories.map((category) => (
             <Link
               key={category.slug}
@@ -104,7 +104,7 @@ export default function RecipesPage() {
           <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
             All Recipes
           </h2>
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {allRecipes.map((recipe) => (
               <RecipeCard key={recipe.slug} recipe={recipe} size="small" />
             ))}
