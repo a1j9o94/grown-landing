@@ -1,7 +1,6 @@
-import { MDXRemote, MDXRemoteProps } from "next-mdx-remote/rsc";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,16 +8,16 @@ import Image from "next/image";
 const mdxComponents = {
   // Override default elements with custom styling
   h1: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h1 className="serif mt-12 text-3xl font-semibold text-[#2C3628] first:mt-0 md:text-4xl" {...props} />
+    <h1 className="serif mt-12 text-3xl font-semibold text-[#2C3628] first:mt-0 md:text-4xl [&>a]:no-underline [&>a]:text-inherit" {...props} />
   ),
   h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h2 className="serif mt-10 text-2xl font-semibold text-[#2C3628] md:text-3xl" {...props} />
+    <h2 className="serif mt-10 text-2xl font-semibold text-[#2C3628] md:text-3xl [&>a]:no-underline [&>a]:text-inherit" {...props} />
   ),
   h3: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h3 className="mt-8 text-xl font-semibold text-[#2C3628]" {...props} />
+    <h3 className="mt-8 text-xl font-semibold text-[#2C3628] [&>a]:no-underline [&>a]:text-inherit" {...props} />
   ),
   h4: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h4 className="mt-6 text-lg font-semibold text-[#2C3628]" {...props} />
+    <h4 className="mt-6 text-lg font-semibold text-[#2C3628] [&>a]:no-underline [&>a]:text-inherit" {...props} />
   ),
   p: (props: React.HTMLAttributes<HTMLParagraphElement>) => (
     <p className="mt-4 leading-relaxed text-[#2C3628]/80" {...props} />
@@ -33,6 +32,11 @@ const mdxComponents = {
     <li className="leading-relaxed" {...props} />
   ),
   a: ({ href, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+    // Heading anchor links (from rehype-autolink-headings) - no special styling
+    if (href?.startsWith("#")) {
+      return <a href={href} className="text-inherit no-underline" {...props} />;
+    }
+    // Internal links
     if (href?.startsWith("/")) {
       return (
         <Link
@@ -42,6 +46,7 @@ const mdxComponents = {
         />
       );
     }
+    // External links
     return (
       <a
         href={href}
@@ -172,7 +177,7 @@ export function MDXContent({ source }: MDXContentProps) {
           remarkPlugins: [remarkGfm],
           rehypePlugins: [
             rehypeSlug,
-            [rehypeAutolinkHeadings, { behavior: "wrap" }],
+            // Removed rehypeAutolinkHeadings to prevent underlines on headings
           ],
         },
       }}
