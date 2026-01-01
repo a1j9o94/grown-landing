@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllRecipePosts, recipeCategories } from "@/lib/content";
+import { RecipeCard } from "@/app/components/RecipeCard";
 
 export const metadata: Metadata = {
   title: "Recipes | Grown",
@@ -49,48 +50,7 @@ export default function RecipesPage() {
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuredRecipes.map((recipe) => (
-              <Link
-                key={recipe.slug}
-                href={`/recipes/${recipe.slug}`}
-                className="group rounded-2xl border border-[#2C3628]/10 bg-white/50 p-6 transition-all hover:border-[#2C3628]/20 hover:shadow-md"
-              >
-                <div className="mb-3 flex items-center gap-2">
-                  <span className="rounded-full bg-[#2C3628]/5 px-2 py-0.5 text-xs text-[#2C3628]/60">
-                    {getCategoryName(recipe.frontmatter.category)}
-                  </span>
-                  <span className="text-xs text-[#2C3628]/40">•</span>
-                  <span className="text-xs text-[#2C3628]/60">
-                    {recipe.frontmatter.difficulty}
-                  </span>
-                </div>
-                <h3 className="text-lg font-semibold text-[#2C3628] group-hover:text-[#B85C38]">
-                  {recipe.frontmatter.title}
-                </h3>
-                <p className="mt-2 text-sm text-[#2C3628]/60 line-clamp-2">
-                  {recipe.frontmatter.description}
-                </p>
-                <div className="mt-4 flex items-center justify-between">
-                  <span className="text-xs text-[#2C3628]/40">
-                    {recipe.frontmatter.servings} servings
-                  </span>
-                  <span className="inline-flex items-center gap-1 text-sm font-medium text-[#B85C38]">
-                    View recipe
-                    <svg
-                      className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </Link>
+              <RecipeCard key={recipe.slug} recipe={recipe} size="large" />
             ))}
           </div>
         </section>
@@ -144,35 +104,7 @@ export default function RecipesPage() {
           </h2>
           <div className="grid gap-4 md:grid-cols-2">
             {allRecipes.map((recipe) => (
-              <Link
-                key={recipe.slug}
-                href={`/recipes/${recipe.slug}`}
-                className="group flex items-center justify-between rounded-xl border border-[#2C3628]/10 bg-white/50 p-4 transition-all hover:border-[#2C3628]/20 hover:shadow-md"
-              >
-                <div>
-                  <h3 className="font-semibold text-[#2C3628] group-hover:text-[#B85C38]">
-                    {recipe.frontmatter.title}
-                  </h3>
-                  <div className="mt-1 flex items-center gap-2 text-xs text-[#2C3628]/40">
-                    <span>{getCategoryName(recipe.frontmatter.category)}</span>
-                    <span>•</span>
-                    <span>{recipe.frontmatter.servings} servings</span>
-                  </div>
-                </div>
-                <svg
-                  className="h-5 w-5 text-[#B85C38] transition-transform group-hover:translate-x-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </Link>
+              <RecipeCard key={recipe.slug} recipe={recipe} size="small" />
             ))}
           </div>
         </section>
@@ -228,13 +160,4 @@ export default function RecipesPage() {
       </section>
     </div>
   );
-}
-
-function getCategoryName(slug: string): string {
-  const names: Record<string, string> = {
-    dinners: "Dinner",
-    "snacks-sides": "Side",
-    desserts: "Dessert",
-  };
-  return names[slug] || slug;
 }
