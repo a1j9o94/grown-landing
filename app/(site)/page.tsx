@@ -317,9 +317,10 @@ export default function HomePage() {
                     rel="noopener noreferrer"
                     aria-label={social.ariaLabel}
                     title={social.ariaLabel}
-                    className="inline-flex items-center gap-1 rounded-full border border-[#2C3628]/20 bg-white/60 px-3 py-1.5 text-[#2C3628] transition-colors hover:border-[#2C3628]/40 hover:text-[#2C3628]/90"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#2C3628]/20 bg-white/60 px-3 py-1.5 text-[#2C3628] transition-colors hover:border-[#2C3628]/40 hover:text-[#2C3628]/90"
                   >
-                    {social.name}
+                    <span aria-hidden>{social.icon}</span>
+                    <span>{social.name}</span>
                   </Link>
                 ))}
               </div>

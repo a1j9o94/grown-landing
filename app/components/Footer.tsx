@@ -27,9 +27,10 @@ export function Footer() {
                     rel="noopener noreferrer"
                     aria-label={social.ariaLabel}
                     title={social.ariaLabel}
-                    className="inline-flex items-center rounded-full border border-[#2C3628]/15 px-3 py-1.5 text-[#2C3628]/70 transition-colors hover:border-[#2C3628]/30 hover:text-[#2C3628]"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#2C3628]/15 px-3 py-1.5 text-[#2C3628]/70 transition-colors hover:border-[#2C3628]/30 hover:text-[#2C3628]"
                   >
-                    {social.name}
+                    <span aria-hidden>{social.icon}</span>
+                    <span>{social.name}</span>
                   </Link>
                 ))}
               </div>
