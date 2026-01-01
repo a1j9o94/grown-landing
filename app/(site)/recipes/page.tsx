@@ -28,8 +28,10 @@ export default function RecipesPage() {
     count: recipesByCategory[slug]?.length || 0,
   }));
 
-  // Get featured recipes (first 3)
-  const featuredRecipes = allRecipes.slice(0, 3);
+  // Get featured recipes via frontmatter flag
+  const featuredRecipes = allRecipes.filter(
+    (recipe) => recipe.frontmatter.featured,
+  );
 
   return (
     <div className="py-12 md:py-20">
