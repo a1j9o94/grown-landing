@@ -55,7 +55,7 @@ export default function TermsPage() {
               3. Product Availability
             </h2>
             <p>
-              Grown products are currently only available in Colorado. Products
+              Grown products are currently only available in Illinois. Products
               may not be shipped to or purchased by residents of other states.
               Availability is subject to local and state regulations.
             </p>

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Grown",
   },
   description:
-    "Pantry staples for your unwind era. THC-infused cooking oil and finishing salt designed for dinner parties, not dorm rooms. Available in Colorado.",
+    "Pantry staples for your unwind era. THC-infused cooking oil and finishing salt designed for dinner parties, not dorm rooms. Available in Illinois.",
   keywords: [
     "THC oil",
     "THC salt",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "THC cooking oil",
     "infused oil",
     "cannabis recipes",
-    "Colorado THC",
+    "Illinois THC",
     "adult edibles",
   ],
   authors: [{ name: "Grown" }],

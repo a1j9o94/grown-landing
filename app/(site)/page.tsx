@@ -84,7 +84,7 @@ export default function HomePage() {
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#2C3628]/10 bg-white/40 px-4 py-1.5 text-xs font-medium backdrop-blur-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-[#2C3628]" />
               <span className="uppercase tracking-wide">
-                Colorado Launch • Batch 001
+                Illinois Launch • Batch 001
               </span>
             </div>
 
@@ -334,7 +334,7 @@ export default function HomePage() {
           )}
 
           <p className="text-center text-xs text-[#2C3628]/40">
-            Must be 21+ to join. Availability subject to Colorado regulations.
+            Must be 21+ to join. Availability subject to Illinois regulations.
           </p>
         </form>
       </section>

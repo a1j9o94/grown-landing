@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About | Grown",
   description:
-    "We make THC-infused pantry staples for adults who take their cooking seriously. Based in Colorado, launching soon.",
+    "We make THC-infused pantry staples for adults who take their cooking seriously. Based in Illinois, launching soon.",
 };
 
 export default function AboutPage() {
@@ -112,15 +112,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Colorado */}
+      {/* Illinois */}
       <section className="mb-24 rounded-[32px] bg-[#2C3628] p-8 md:p-12">
         <div className="max-w-2xl">
-          <h2 className="serif text-3xl text-[#F2F0E9]">Based in Colorado</h2>
+          <h2 className="serif text-3xl text-[#F2F0E9]">Based in Illinois</h2>
           <p className="mt-4 text-[#F2F0E9]/70">
-            We&apos;re launching in Colorado first—a state that pioneered legal
-            cannabis and has some of the most rigorous quality standards in the
-            industry. Every batch is produced and tested in accordance with
-            Colorado regulations.
+            We&apos;re launching in Illinois first—a state with one of the
+            most mature and well-regulated cannabis markets in the country.
+            Every batch is produced and tested in accordance with
+            Illinois regulations.
           </p>
           <p className="mt-4 text-[#F2F0E9]/70">
             Expansion to additional states is on the roadmap, but we&apos;re

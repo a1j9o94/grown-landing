@@ -137,7 +137,7 @@ export default function THCSaltPage() {
               Join the Waitlist
             </Link>
             <p className="mt-4 text-xs text-[#2C3628]/40">
-              Currently accepting signups for Colorado launch.
+              Currently accepting signups for Illinois launch.
             </p>
           </div>
         </div>

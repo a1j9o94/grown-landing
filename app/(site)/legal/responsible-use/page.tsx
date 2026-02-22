@@ -206,7 +206,7 @@ export default function ResponsibleUsePage() {
           <section>
             <h2 className="serif text-2xl text-[#2C3628]">Legal Notice</h2>
             <p className="mt-4">
-              Grown products are only legal in Colorado and are intended for
+              Grown products are only legal in Illinois and are intended for
               adults 21 and older. It is illegal to transport THC products
               across state lines. Always comply with local and state laws
               regarding cannabis possession and consumption.

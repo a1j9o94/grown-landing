@@ -106,7 +106,7 @@ export default function ContactPage() {
         <div className="rounded-[24px] bg-white/50 p-8">
           <h2 className="text-xl font-semibold text-[#2C3628]">Location</h2>
           <p className="mt-3 text-[#2C3628]/70">
-            Based in Colorado. Products available to Colorado residents only at
+            Based in Illinois. Products available to Illinois residents only at
             launch.
           </p>
           <p className="mt-6 text-sm text-[#2C3628]/50">
