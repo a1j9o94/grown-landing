@@ -48,7 +48,7 @@ export function Footer() {
                   href="/products#seasoning-salt"
                   className="text-[#0D0D0D]/70 transition-colors hover:text-[#0D0D0D]"
                 >
-                  THC Oil
+                  Seasoning Salt
                 </Link>
               </li>
               <li>
@@ -56,7 +56,7 @@ export function Footer() {
                   href="/products#chili-lime"
                   className="text-[#0D0D0D]/70 transition-colors hover:text-[#0D0D0D]"
                 >
-                  THC Salt
+                  Chili-Lime Seasoning
                 </Link>
               </li>
               <li>
