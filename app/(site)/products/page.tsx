@@ -5,13 +5,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Products | Grown",
   description:
-    "THC-infused pantry staples for the discerning home cook. Explore our collection of heirloom oil and finishing salt.",
+    "THC-infused seasoning salt and chili-lime seasoning in single-serve 5mg sachets. Pantry staples for dinner parties, not dorm rooms.",
 };
 
-function CheckIcon() {
+function CheckIcon({ color = "#2e7d32" }: { color?: string }) {
   return (
     <svg
-      className="h-4 w-4 text-[#B85C38]"
+      className="h-4 w-4"
+      style={{ color }}
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -31,126 +32,153 @@ export default function ProductsPage() {
     <div className="py-12 md:py-20">
       {/* Hero */}
       <div className="mb-16 text-center">
-        <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">
-          The Pantry
+        <h1 className="serif text-4xl italic text-[#2e7d32] md:text-5xl">
+          The Lineup
         </h1>
-        <p className="mx-auto mt-4 max-w-xl text-lg text-[#2C3628]/70">
-          Cooking essentials designed for dinner parties, not dorm rooms.
+        <p className="mx-auto mt-4 max-w-xl text-lg text-[#0d0d0d]/70">
+          Seasoning staples designed for dinner parties, not dorm rooms.
           Chef-grade ingredients with precise, reliable dosing.
         </p>
       </div>
 
-      {/* Product Grid */}
-      <div className="grid gap-8 md:grid-cols-2">
-        {/* Oil Card */}
-        <Link
-          href="/products/thc-oil"
-          className="group relative overflow-hidden rounded-[32px] bg-[#E8EAE4] transition-all hover:shadow-xl hover:shadow-[#2C3628]/5"
-        >
-          <div className="relative aspect-[4/3] w-full overflow-hidden">
+      {/* SKU 01: Seasoning Salt */}
+      <section
+        id="seasoning-salt"
+        className="mb-12 overflow-hidden rounded-[32px] bg-[#e8f5e9]"
+      >
+        <div className="grid items-center gap-8 p-8 md:grid-cols-2 md:p-12">
+          <div className="relative aspect-[2/3] w-full max-w-sm overflow-hidden rounded-[24px] shadow-xl shadow-[#0d0d0d]/10 max-md:mx-auto">
             <Image
-              src="/oil_image.png"
-              alt="Grown Heirloom Oil"
+              src="/brand/sachet-seasoning-salt.webp"
+              alt="Grown THC Infused Seasoning Salt - single-serve sachet"
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#E8EAE4] via-transparent to-transparent" />
           </div>
-          <div className="relative z-10 p-8 md:p-10">
-            <div className="serif text-3xl text-[#2C3628]">Heirloom Oil</div>
-            <p className="mt-2 text-base text-[#2C3628]/70">
-              For sautéing, roasting, and drizzling.
+          <div>
+            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#2e7d32]">
+              SKU 01 • Launch
+            </div>
+            <h2 className="serif mt-2 text-4xl text-[#0d0d0d]">
+              Seasoning Salt
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[#0d0d0d]/70">
+              The everyday finisher. A savory, herby blend that lands on
+              everything from eggs to roasted vegetables - dosed to the pinch,
+              so the math is always done for you.
             </p>
-            <ul className="mt-6 space-y-3 text-sm text-[#2C3628]/80">
+            <ul className="mt-6 space-y-3 text-sm text-[#0d0d0d]/80">
               <li className="flex items-center gap-3">
-                <CheckIcon /> <span className="font-medium">5mg THC</span> per
-                tsp
+                <CheckIcon color="#2e7d32" />
+                <span>
+                  <span className="font-medium">5mg THC</span> per sachet
+                </span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon /> Cold-pressed olive blend
+                <CheckIcon color="#2e7d32" />
+                <span>Single-serve - no measuring, no guesswork</span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon /> Zero &ldquo;weedy&rdquo; aftertaste
+                <CheckIcon color="#2e7d32" />
+                <span>Sold in 5-packs</span>
               </li>
             </ul>
-            <div className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[#B85C38]">
-              Learn more
-              <svg
-                className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href="/#waitlist"
+                className="inline-flex items-center justify-center rounded-full bg-[#2e7d32] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#1b5e20]"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+                Join the list for launch
+              </Link>
+              <Link
+                href="/products/seasoning-salt"
+                className="text-sm font-medium text-[#2e7d32] transition-colors hover:text-[#1b5e20]"
+              >
+                Product details
+              </Link>
             </div>
           </div>
-        </Link>
+        </div>
+      </section>
 
-        {/* Salt Card */}
-        <Link
-          href="/products/thc-salt"
-          className="group relative overflow-hidden rounded-[32px] bg-[#E6DBC6] transition-all hover:shadow-xl hover:shadow-[#B85C38]/10"
-        >
-          <div className="relative aspect-[4/3] w-full overflow-hidden">
-            <Image
-              src="/salt_image.png"
-              alt="Grown Finishing Salt"
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#E6DBC6] via-transparent to-transparent" />
+      {/* SKU 02: Chili-Lime */}
+      <section
+        id="chili-lime"
+        className="mb-12 overflow-hidden rounded-[32px] bg-[#fbe7d3]"
+      >
+        <div className="grid items-center gap-8 p-8 md:grid-cols-2 md:p-12">
+          <div className="md:order-2">
+            <div className="relative aspect-[2/3] w-full max-w-sm overflow-hidden rounded-[24px] shadow-xl shadow-[#0d0d0d]/10 max-md:mx-auto md:ml-auto">
+              <Image
+                src="/brand/sachet-chili-lime.webp"
+                alt="Grown THC Infused Chili-Lime Seasoning - single-serve sachet"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
-          <div className="relative z-10 p-8 md:p-10">
-            <div className="serif text-3xl text-[#2C3628]">Flake Salt</div>
-            <p className="mt-2 text-base text-[#2C3628]/70">
-              The perfect finishing pinch.
+          <div className="md:order-1">
+            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#e65c00]">
+              SKU 02 • Launch
+            </div>
+            <h2 className="serif mt-2 text-4xl text-[#0d0d0d]">
+              Chili-Lime Seasoning
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[#0d0d0d]/70">
+              Heat, citrus, and a little mischief. Made for rims, elote, fruit,
+              and everything off the grill - the sachet you pass around the
+              table.
             </p>
-            <ul className="mt-6 space-y-3 text-sm text-[#2C3628]/80">
+            <ul className="mt-6 space-y-3 text-sm text-[#0d0d0d]/80">
               <li className="flex items-center gap-3">
-                <CheckIcon /> <span className="font-medium">2mg THC</span> per
-                pinch
+                <CheckIcon color="#e65c00" />
+                <span>
+                  <span className="font-medium">5mg THC</span> per sachet
+                </span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon /> Harvested grey sea salt
+                <CheckIcon color="#e65c00" />
+                <span>Single-serve - no measuring, no guesswork</span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon /> Fast-acting absorption
+                <CheckIcon color="#e65c00" />
+                <span>Sold in 5-packs</span>
               </li>
             </ul>
-            <div className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[#B85C38]">
-              Learn more
-              <svg
-                className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href="/#waitlist"
+                className="inline-flex items-center justify-center rounded-full bg-[#e65c00] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#c24e00]"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+                Join the list for launch
+              </Link>
+              <Link
+                href="/products/chili-lime-seasoning"
+                className="text-sm font-medium text-[#e65c00] transition-colors hover:text-[#c24e00]"
+              >
+                Product details
+              </Link>
             </div>
           </div>
-        </Link>
-      </div>
+        </div>
+      </section>
 
-      {/* Quality Link */}
-      <div className="mt-16 text-center">
+      {/* Testing & Quality strip */}
+      <section className="rounded-[32px] border border-[#0d0d0d]/10 p-8 text-center md:p-12">
+        <h3 className="serif text-2xl text-[#0d0d0d]">
+          Tested like we&apos;re feeding our own friends. Because we are.
+        </h3>
+        <p className="mx-auto mt-3 max-w-xl text-sm text-[#0d0d0d]/60">
+          Every batch is third-party tested for potency and purity, with COAs
+          you can actually read.
+        </p>
         <Link
           href="/products/testing-and-quality"
-          className="inline-flex items-center gap-2 rounded-full border border-[#2C3628]/20 px-6 py-3 text-sm font-medium text-[#2C3628] transition-all hover:bg-[#2C3628]/5"
+          className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[#2e7d32] transition-colors hover:text-[#1b5e20]"
         >
+          How we test
           <svg
-            className="h-5 w-5"
+            className="h-4 w-4"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -159,12 +187,11 @@ export default function ProductsPage() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              d="M9 5l7 7-7 7"
             />
           </svg>
-          Testing & Quality Standards
         </Link>
-      </div>
+      </section>
     </div>
   );
 }

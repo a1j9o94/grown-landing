@@ -6,7 +6,7 @@ import Link from "next/link";
 import { socialLinks } from "../lib/socialLinks";
 
 // --- Types & Utilities ---
-type Interest = "oil" | "salt";
+type Interest = "seasoning-salt" | "chili-lime";
 
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim().toLowerCase());
@@ -15,7 +15,7 @@ function isValidEmail(email: string) {
 export default function HomePage() {
   const [email, setEmail] = useState("");
   const [interests, setInterests] = useState<Set<Interest>>(
-    new Set(["oil", "salt"])
+    new Set(["seasoning-salt", "chili-lime"])
   );
   const [zip, setZip] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -55,7 +55,7 @@ export default function HomePage() {
       setStatus("success");
       setEmail("");
       setZip("");
-      setInterests(new Set(["oil", "salt"]));
+      setInterests(new Set(["seasoning-salt", "chili-lime"]));
     } catch (err: unknown) {
       console.error(err);
       setStatus("error");
@@ -81,57 +81,58 @@ export default function HomePage() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Left: Copy */}
           <div className="max-w-xl">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#2C3628]/10 bg-white/40 px-4 py-1.5 text-xs font-medium backdrop-blur-sm">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#2C3628]" />
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#0d0d0d]/10 bg-white/40 px-4 py-1.5 text-xs font-medium backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#2e7d32]" />
               <span className="uppercase tracking-wide">
                 Illinois Launch • Batch 001
               </span>
             </div>
 
-            <h1 className="serif text-5xl font-light leading-[1.1] text-[#2C3628] sm:text-7xl">
+            <h1 className="serif text-5xl font-light italic leading-[1.1] text-[#2e7d32] sm:text-7xl">
               Get high like <br />
-              <span className="italic">an adult.</span>
+              an adult.
             </h1>
 
-            <p className="mt-8 text-lg leading-relaxed text-[#2C3628]/80">
-              Pantry staples for your unwind era. Cooking oil and finishing salt
-              designed for dinner parties, not dorm rooms.
+            <p className="mt-8 text-lg leading-relaxed text-[#0d0d0d]/80">
+              THC-infused seasoning salt and chili-lime seasoning in
+              single-serve sachets. 5mg each, designed for dinner parties, not
+              dorm rooms.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#waitlist"
-                className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#2C3628] px-8 py-4 text-sm font-medium text-[#F2F0E9] transition-all hover:bg-[#1f261c]"
+                className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#2e7d32] px-8 py-4 text-sm font-medium text-[#f7f3e8] transition-all hover:bg-[#1b5e20]"
               >
                 Request Invite
               </a>
               <Link
                 href="/products"
-                className="inline-flex items-center justify-center rounded-full border border-[#2C3628]/20 px-8 py-4 text-sm font-medium text-[#2C3628] transition-all hover:bg-[#2C3628]/5"
+                className="inline-flex items-center justify-center rounded-full border border-[#0d0d0d]/20 px-8 py-4 text-sm font-medium text-[#0d0d0d] transition-all hover:bg-[#0d0d0d]/5"
               >
-                View Collection
+                Meet the Lineup
               </Link>
             </div>
           </div>
 
-          {/* Right: Visual - Two Product Images */}
+          {/* Right: Visual - Two Sachet Images */}
           <div className="relative grid grid-cols-2 gap-4 lg:gap-6">
-            {/* Oil Image */}
-            <div className="relative aspect-[3/4] overflow-hidden rounded-[24px] shadow-2xl shadow-[#2C3628]/10">
+            {/* Seasoning Salt Sachet */}
+            <div className="relative aspect-[2/3] overflow-hidden rounded-[24px] shadow-2xl shadow-[#0d0d0d]/10">
               <Image
-                src="/oil_image.png"
-                alt="Grown Heirloom Oil - THC Infused"
+                src="/brand/sachet-seasoning-salt.webp"
+                alt="Grown THC Infused Seasoning Salt - single-serve sachet"
                 fill
                 className="object-cover"
                 priority
               />
               <div className="absolute inset-0 rounded-[24px] ring-1 ring-inset ring-black/5" />
             </div>
-            {/* Salt Image */}
-            <div className="relative aspect-[3/4] translate-y-8 overflow-hidden rounded-[24px] shadow-2xl shadow-[#2C3628]/10">
+            {/* Chili-Lime Sachet */}
+            <div className="relative aspect-[2/3] translate-y-8 overflow-hidden rounded-[24px] shadow-2xl shadow-[#0d0d0d]/10">
               <Image
-                src="/salt_image.png"
-                alt="Grown Finishing Salt - THC Infused"
+                src="/brand/sachet-chili-lime.webp"
+                alt="Grown THC Infused Chili-Lime Seasoning - single-serve sachet"
                 fill
                 className="object-cover"
                 priority
@@ -142,71 +143,82 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Product Showcase (The Pantry) */}
+      {/* Product Showcase (The Lineup) */}
       <section id="products" className="grid gap-8 md:grid-cols-2">
-        {/* Oil Card */}
+        {/* Seasoning Salt Card */}
         <Link
-          href="/products/thc-oil"
-          className="group relative overflow-hidden rounded-[32px] bg-[#E8EAE4] transition-all hover:shadow-xl hover:shadow-[#2C3628]/5"
+          href="/products#seasoning-salt"
+          className="group relative overflow-hidden rounded-[32px] bg-[#e8f5e9] transition-all hover:shadow-xl hover:shadow-[#2e7d32]/10"
         >
           <div className="relative aspect-[4/3] w-full overflow-hidden">
             <Image
-              src="/oil_image.png"
-              alt="Grown Heirloom Oil"
+              src="/brand/box-seasoning-salt.webp"
+              alt="Grown Seasoning Salt 5-pack box"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#E8EAE4] via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#e8f5e9] via-transparent to-transparent" />
           </div>
           <div className="relative z-10 p-8 md:p-10">
-            <div className="serif text-3xl text-[#2C3628]">Heirloom Oil</div>
-            <p className="mt-2 text-base text-[#2C3628]/70">
-              For sautéing, roasting, and drizzling.
+            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#2e7d32]">
+              SKU 01
+            </div>
+            <div className="serif mt-1 text-3xl text-[#0d0d0d]">
+              Seasoning Salt
+            </div>
+            <p className="mt-2 text-base text-[#0d0d0d]/70">
+              The everyday finisher. Savory, herby, dosed to the pinch.
             </p>
-            <ul className="mt-6 space-y-3 text-sm text-[#2C3628]/80">
+            <ul className="mt-6 space-y-3 text-sm text-[#0d0d0d]/80">
               <li className="flex items-center gap-3">
-                <CheckIcon /> <span className="font-medium">5mg THC</span> per
-                tsp
+                <CheckIcon color="#2e7d32" />{" "}
+                <span className="font-medium">5mg THC</span> per sachet
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon /> Cold-pressed olive blend
+                <CheckIcon color="#2e7d32" /> Single-serve, no measuring
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon /> Zero &ldquo;weedy&rdquo; aftertaste
+                <CheckIcon color="#2e7d32" /> Sold in 5-packs
               </li>
             </ul>
           </div>
         </Link>
 
-        {/* Salt Card */}
+        {/* Chili-Lime Card */}
         <Link
-          href="/products/thc-salt"
-          className="group relative overflow-hidden rounded-[32px] bg-[#E6DBC6] transition-all hover:shadow-xl hover:shadow-[#B85C38]/10"
+          href="/products#chili-lime"
+          className="group relative overflow-hidden rounded-[32px] bg-[#fbe7d3] transition-all hover:shadow-xl hover:shadow-[#e65c00]/10"
         >
           <div className="relative aspect-[4/3] w-full overflow-hidden">
             <Image
-              src="/salt_image.png"
-              alt="Grown Finishing Salt"
+              src="/brand/box-chili-lime.webp"
+              alt="Grown Chili-Lime Seasoning 5-pack box"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#E6DBC6] via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#fbe7d3] via-transparent to-transparent" />
           </div>
           <div className="relative z-10 p-8 md:p-10">
-            <div className="serif text-3xl text-[#2C3628]">Flake Salt</div>
-            <p className="mt-2 text-base text-[#2C3628]/70">
-              The perfect finishing pinch.
+            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#e65c00]">
+              SKU 02
+            </div>
+            <div className="serif mt-1 text-3xl text-[#0d0d0d]">
+              Chili-Lime Seasoning
+            </div>
+            <p className="mt-2 text-base text-[#0d0d0d]/70">
+              Heat, citrus, and a little mischief. Made for rims, corn, and
+              everything off the grill.
             </p>
-            <ul className="mt-6 space-y-3 text-sm text-[#2C3628]/80">
+            <ul className="mt-6 space-y-3 text-sm text-[#0d0d0d]/80">
               <li className="flex items-center gap-3">
-                <CheckIcon /> <span className="font-medium">2mg THC</span> per
-                pinch
+                <CheckIcon color="#e65c00" />{" "}
+                <span className="font-medium">5mg THC</span> per sachet
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon /> Harvested grey sea salt
+                <CheckIcon color="#e65c00" /> Single-serve, no measuring
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon /> Fast-acting absorption
+                <CheckIcon color="#e65c00" /> Sold in 5-packs
               </li>
             </ul>
           </div>
@@ -216,14 +228,14 @@ export default function HomePage() {
       {/* Social Proof / Vibe Check */}
       <section
         id="philosophy"
-        className="my-24 border-y border-[#2C3628]/10 py-16 text-center"
+        className="my-24 border-y border-[#0d0d0d]/10 py-16 text-center"
       >
-        <h2 className="serif text-3xl text-[#2C3628] md:text-4xl">
+        <h2 className="serif text-3xl text-[#0d0d0d] md:text-4xl">
           &ldquo;Finally, edibles that respect <br className="hidden md:block" />{" "}
           my kitchen counter.&rdquo;
         </h2>
         <div className="mt-16 grid grid-cols-2 gap-10 md:grid-cols-4">
-          <Feature label="Dosage Control" desc="Reliable math, every time." />
+          <Feature label="Dosage Control" desc="5mg per sachet, every time." />
           <Feature label="Chef Grade" desc="Ingredients first, THC second." />
           <Feature label="Dinner Ready" desc="Designed to be shared." />
           <Feature label="Clean Label" desc="No solvents, no junk." />
@@ -233,39 +245,39 @@ export default function HomePage() {
       {/* Waitlist Form */}
       <section
         id="waitlist"
-        className="mx-auto max-w-2xl rounded-[32px] bg-white p-8 shadow-2xl shadow-[#2C3628]/5 ring-1 ring-black/5 md:p-14"
+        className="mx-auto max-w-2xl rounded-[32px] bg-white p-8 shadow-2xl shadow-[#0d0d0d]/5 ring-1 ring-black/5 md:p-14"
       >
         <div className="text-center">
-          <h3 className="serif text-4xl text-[#2C3628]">The Guest List</h3>
-          <p className="mt-4 text-[#2C3628]/60">
+          <h3 className="serif text-4xl text-[#0d0d0d]">The Guest List</h3>
+          <p className="mt-4 text-[#0d0d0d]/60">
             We&apos;re launching in small batches to ensure quality. <br />
-            Tell us what you cook with, and we&apos;ll save your spot.
+            Tell us what you&apos;d reach for, and we&apos;ll save your spot.
           </p>
         </div>
 
         <form onSubmit={onSubmit} className="mt-12 space-y-8">
           {/* Interest Selector */}
           <div>
-            <label className="mb-4 block text-center text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+            <label className="mb-4 block text-center text-xs font-bold uppercase tracking-widest text-[#0d0d0d]/40">
               I want to cook with
             </label>
             <div className="grid grid-cols-2 gap-4">
               <SelectButton
-                active={interests.has("oil")}
-                onClick={() => toggleInterest("oil")}
-                label="Infused Oil"
+                active={interests.has("seasoning-salt")}
+                onClick={() => toggleInterest("seasoning-salt")}
+                label="Seasoning Salt"
               />
               <SelectButton
-                active={interests.has("salt")}
-                onClick={() => toggleInterest("salt")}
-                label="Finishing Salt"
+                active={interests.has("chili-lime")}
+                onClick={() => toggleInterest("chili-lime")}
+                label="Chili-Lime"
               />
             </div>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
             <div>
-              <label className="mb-2 block text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+              <label className="mb-2 block text-xs font-bold uppercase tracking-widest text-[#0d0d0d]/40">
                 Email
               </label>
               <input
@@ -273,19 +285,19 @@ export default function HomePage() {
                 onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 placeholder="host@dinnerparty.com"
-                className="w-full rounded-xl border border-[#2C3628]/10 bg-[#F2F0E9] px-4 py-3 text-[#2C3628] outline-none transition-all focus:border-[#2C3628]/40 focus:ring-1 focus:ring-[#2C3628]/40"
+                className="w-full rounded-xl border border-[#0d0d0d]/10 bg-[#f7f3e8] px-4 py-3 text-[#0d0d0d] outline-none transition-all focus:border-[#2e7d32]/40 focus:ring-1 focus:ring-[#2e7d32]/40"
               />
             </div>
             <div>
-              <label className="mb-2 block text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+              <label className="mb-2 block text-xs font-bold uppercase tracking-widest text-[#0d0d0d]/40">
                 Zip Code
               </label>
               <input
                 value={zip}
                 onChange={(e) => setZip(e.target.value)}
-                placeholder="80202"
+                placeholder="60607"
                 maxLength={5}
-                className="w-full rounded-xl border border-[#2C3628]/10 bg-[#F2F0E9] px-4 py-3 text-[#2C3628] outline-none transition-all focus:border-[#2C3628]/40 focus:ring-1 focus:ring-[#2C3628]/40"
+                className="w-full rounded-xl border border-[#0d0d0d]/10 bg-[#f7f3e8] px-4 py-3 text-[#0d0d0d] outline-none transition-all focus:border-[#2e7d32]/40 focus:ring-1 focus:ring-[#2e7d32]/40"
               />
             </div>
           </div>
@@ -293,20 +305,20 @@ export default function HomePage() {
           <button
             disabled={!canSubmit}
             type="submit"
-            className="w-full rounded-xl bg-[#2C3628] py-4 text-base font-semibold text-[#F2F0E9] shadow-lg shadow-[#2C3628]/20 transition-all hover:scale-[1.01] active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-50"
+            className="w-full rounded-xl bg-[#2e7d32] py-4 text-base font-semibold text-[#f7f3e8] shadow-lg shadow-[#2e7d32]/20 transition-all hover:scale-[1.01] hover:bg-[#1b5e20] active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-50"
           >
             {isSubmitting ? "Saving your spot..." : "Notify Me at Launch"}
           </button>
 
           {status === "success" && (
             <div
-              className="space-y-3 rounded-xl bg-[#D4D9CD]/30 p-4 text-center text-sm font-medium text-[#2C3628]"
+              className="space-y-3 rounded-xl bg-[#a5d6a7]/30 p-4 text-center text-sm font-medium text-[#0d0d0d]"
               role="status"
               aria-live="polite"
             >
               <div>
-                <span className="serif italic">Cheers.</span> You&apos;re on the
-                list. Follow Grown for launch drops and recipes.
+                <span className="serif italic">Cheers.</span> You&apos;re on
+                the list. Follow Grown for launch drops and recipes.
               </div>
               <div className="flex flex-wrap justify-center gap-3 text-xs font-semibold">
                 {socialLinks.map((social) => (
@@ -317,7 +329,7 @@ export default function HomePage() {
                     rel="noopener noreferrer"
                     aria-label={social.ariaLabel}
                     title={social.ariaLabel}
-                    className="inline-flex items-center gap-2 rounded-full border border-[#2C3628]/20 bg-white/60 px-3 py-1.5 text-[#2C3628] transition-colors hover:border-[#2C3628]/40 hover:text-[#2C3628]/90"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#0d0d0d]/20 bg-white/60 px-3 py-1.5 text-[#0d0d0d] transition-colors hover:border-[#0d0d0d]/40 hover:text-[#0d0d0d]/90"
                   >
                     <span aria-hidden>{social.icon}</span>
                     <span>{social.name}</span>
@@ -333,7 +345,7 @@ export default function HomePage() {
             </div>
           )}
 
-          <p className="text-center text-xs text-[#2C3628]/40">
+          <p className="text-center text-xs text-[#0d0d0d]/40">
             Must be 21+ to join. Availability subject to Illinois regulations.
           </p>
         </form>
@@ -344,10 +356,11 @@ export default function HomePage() {
 
 // --- Subcomponents ---
 
-function CheckIcon() {
+function CheckIcon({ color = "#2e7d32" }: { color?: string }) {
   return (
     <svg
-      className="h-4 w-4 text-[#B85C38]"
+      className="h-4 w-4"
+      style={{ color }}
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -365,9 +378,9 @@ function CheckIcon() {
 function Feature({ label, desc }: { label: string; desc: string }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="mb-4 h-1 w-8 bg-[#B85C38]/40" />
-      <div className="text-lg font-semibold text-[#2C3628]">{label}</div>
-      <div className="mt-1 text-sm text-[#2C3628]/60">{desc}</div>
+      <div className="mb-4 h-1 w-8 bg-[#2e7d32]/40" />
+      <div className="text-lg font-semibold text-[#0d0d0d]">{label}</div>
+      <div className="mt-1 text-sm text-[#0d0d0d]/60">{desc}</div>
     </div>
   );
 }
@@ -388,8 +401,8 @@ function SelectButton({
       className={`group relative flex items-center justify-center rounded-xl border py-4 text-sm font-medium transition-all
         ${
           active
-            ? "border-[#2C3628] bg-[#2C3628] text-[#F2F0E9] shadow-md"
-            : "border-[#2C3628]/10 bg-white text-[#2C3628] hover:border-[#2C3628]/30 hover:bg-[#faf9f6]"
+            ? "border-[#2e7d32] bg-[#2e7d32] text-[#f7f3e8] shadow-md"
+            : "border-[#0d0d0d]/10 bg-white text-[#0d0d0d] hover:border-[#0d0d0d]/30 hover:bg-[#faf9f6]"
         }`}
     >
       {label}

@@ -3,19 +3,19 @@ import { socialLinks } from "../lib/socialLinks";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-[#2C3628]/10 pt-16 pb-12">
+    <footer className="mt-24 border-t border-[#0D0D0D]/10 pt-16 pb-12">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="serif text-2xl font-semibold tracking-tight text-[#2C3628]">
+            <div className="serif text-2xl font-semibold tracking-tight text-[#0D0D0D]">
               Grown.
             </div>
-            <p className="mt-4 text-sm text-[#2C3628]/60">
+            <p className="mt-4 text-sm text-[#0D0D0D]/60">
               Pantry staples for your unwind era.
             </p>
             <div className="mt-6">
-              <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
                 Follow
               </h4>
               <div className="mt-3 flex flex-wrap gap-3 text-sm">
@@ -27,7 +27,7 @@ export function Footer() {
                     rel="noopener noreferrer"
                     aria-label={social.ariaLabel}
                     title={social.ariaLabel}
-                    className="inline-flex items-center gap-2 rounded-full border border-[#2C3628]/15 px-3 py-1.5 text-[#2C3628]/70 transition-colors hover:border-[#2C3628]/30 hover:text-[#2C3628]"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#0D0D0D]/15 px-3 py-1.5 text-[#0D0D0D]/70 transition-colors hover:border-[#0D0D0D]/30 hover:text-[#0D0D0D]"
                   >
                     <span aria-hidden>{social.icon}</span>
                     <span>{social.name}</span>
@@ -39,30 +39,30 @@ export function Footer() {
 
           {/* Products */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
               Products
             </h4>
             <ul className="mt-4 space-y-3 text-sm">
               <li>
                 <Link
-                  href="/products/thc-oil"
-                  className="text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
+                  href="/products#seasoning-salt"
+                  className="text-[#0D0D0D]/70 transition-colors hover:text-[#0D0D0D]"
                 >
-                  THC Oil
+                  Seasoning Salt
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/products/thc-salt"
-                  className="text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
+                  href="/products#chili-lime"
+                  className="text-[#0D0D0D]/70 transition-colors hover:text-[#0D0D0D]"
                 >
-                  THC Salt
+                  Chili-Lime Seasoning
                 </Link>
               </li>
               <li>
                 <Link
                   href="/products/testing-and-quality"
-                  className="text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
+                  className="text-[#0D0D0D]/70 transition-colors hover:text-[#0D0D0D]"
                 >
                   Testing & Quality
                 </Link>
@@ -72,14 +72,14 @@ export function Footer() {
 
           {/* Learn */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
               Learn
             </h4>
             <ul className="mt-4 space-y-3 text-sm">
               <li>
                 <Link
                   href="/learn"
-                  className="text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
+                  className="text-[#0D0D0D]/70 transition-colors hover:text-[#0D0D0D]"
                 >
                   Guides
                 </Link>
@@ -87,7 +87,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/recipes"
-                  className="text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
+                  className="text-[#0D0D0D]/70 transition-colors hover:text-[#0D0D0D]"
                 >
                   Recipes
                 </Link>
@@ -95,7 +95,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/learn/faq"
-                  className="text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
+                  className="text-[#0D0D0D]/70 transition-colors hover:text-[#0D0D0D]"
                 >
                   FAQ
                 </Link>
@@ -105,14 +105,14 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
               Company
             </h4>
             <ul className="mt-4 space-y-3 text-sm">
               <li>
                 <Link
                   href="/about"
-                  className="text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
+                  className="text-[#0D0D0D]/70 transition-colors hover:text-[#0D0D0D]"
                 >
                   About
                 </Link>
@@ -120,7 +120,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-[#2C3628]/70 transition-colors hover:text-[#2C3628]"
+                  className="text-[#0D0D0D]/70 transition-colors hover:text-[#0D0D0D]"
                 >
                   Contact
                 </Link>
@@ -130,8 +130,8 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-[#2C3628]/10 pt-8 md:flex-row">
-          <div className="flex flex-wrap justify-center gap-6 text-xs text-[#2C3628]/40">
+        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-[#0D0D0D]/10 pt-8 md:flex-row">
+          <div className="flex flex-wrap justify-center gap-6 text-xs text-[#0D0D0D]/40">
             <span>© {new Date().getFullYear()} Grown</span>
             <span>21+ Only</span>
             <span>No Medical Claims</span>
@@ -140,19 +140,19 @@ export function Footer() {
           <div className="flex flex-wrap justify-center gap-6 text-xs">
             <Link
               href="/legal/terms"
-              className="text-[#2C3628]/40 transition-colors hover:text-[#2C3628]/70"
+              className="text-[#0D0D0D]/40 transition-colors hover:text-[#0D0D0D]/70"
             >
               Terms
             </Link>
             <Link
               href="/legal/privacy"
-              className="text-[#2C3628]/40 transition-colors hover:text-[#2C3628]/70"
+              className="text-[#0D0D0D]/40 transition-colors hover:text-[#0D0D0D]/70"
             >
               Privacy
             </Link>
             <Link
               href="/legal/responsible-use"
-              className="text-[#2C3628]/40 transition-colors hover:text-[#2C3628]/70"
+              className="text-[#0D0D0D]/40 transition-colors hover:text-[#0D0D0D]/70"
             >
               Responsible Use
             </Link>

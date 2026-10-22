@@ -19,7 +19,7 @@ export default function SiteLayout({
 
   // Don't render anything until we've checked localStorage
   if (ageVerified === null) {
-    return <div className="fixed inset-0 bg-[#2C3628]" />;
+    return <div className="fixed inset-0 bg-[#0D0D0D]" />;
   }
 
   return (
@@ -31,13 +31,13 @@ export default function SiteLayout({
 
       {/* Editorial Styles */}
       <style jsx global>{`
-        @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;400;600&family=Inter:wght@300;400;500&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600&display=swap");
 
         :root {
-          --bg-cream: #f2f0e9;
-          --text-forest: #2c3628;
-          --accent-clay: #b85c38;
-          --soft-sage: #d4d9cd;
+          --bg-cream: #f7f3e8;
+          --text-forest: #0d0d0d;
+          --accent-clay: #2e7d32;
+          --soft-sage: #a5d6a7;
         }
 
         body {
@@ -66,13 +66,13 @@ export default function SiteLayout({
         }
       `}</style>
 
-      <div className="relative min-h-screen overflow-hidden selection:bg-[#B85C38] selection:text-white">
+      <div className="relative min-h-screen overflow-hidden selection:bg-[#2E7D32] selection:text-white">
         <div className="bg-noise" />
 
         {/* Ambient Blobs */}
         <div className="fixed inset-0 -z-10 opacity-60">
-          <div className="absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-[#D4D9CD] blur-[100px]" />
-          <div className="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-[#E6DBC6] blur-[80px]" />
+          <div className="absolute left-[-10%] top-[-10%] h-[600px] w-[600px] rounded-full bg-[#A5D6A7] blur-[100px]" />
+          <div className="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-[#FBE7D3] blur-[80px]" />
         </div>
 
         <Header />

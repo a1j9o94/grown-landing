@@ -37,8 +37,8 @@ export default function RecipesPage() {
     <div className="py-12 md:py-20">
       {/* Hero */}
       <div className="mb-16 text-center">
-        <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">Recipes</h1>
-        <p className="mx-auto mt-4 max-w-xl text-lg text-[#2C3628]/70">
+        <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">Recipes</h1>
+        <p className="mx-auto mt-4 max-w-xl text-lg text-[#0D0D0D]/70">
           THC-friendly recipes designed for home cooks. Each recipe includes a
           &ldquo;THC Option&rdquo; so you can choose your own adventure.
         </p>
@@ -47,7 +47,7 @@ export default function RecipesPage() {
       {/* Featured Recipes */}
       {featuredRecipes.length > 0 && (
         <section className="mb-16">
-          <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+          <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
             Featured Recipes
           </h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -60,7 +60,7 @@ export default function RecipesPage() {
 
       {/* Categories Grid */}
       <section className="mb-16">
-        <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+        <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
           Browse by Category
         </h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -68,16 +68,16 @@ export default function RecipesPage() {
             <Link
               key={category.slug}
               href={`/recipes/${category.slug}`}
-              className="group relative overflow-hidden rounded-[24px] bg-[#2C3628]/5 p-8 transition-all hover:bg-[#2C3628]/10"
+              className="group relative overflow-hidden rounded-[24px] bg-[#0D0D0D]/5 p-8 transition-all hover:bg-[#0D0D0D]/10"
             >
-              <h3 className="serif text-2xl text-[#2C3628]">{category.title}</h3>
-              <p className="mt-2 text-sm text-[#2C3628]/60">
+              <h3 className="serif text-2xl text-[#0D0D0D]">{category.title}</h3>
+              <p className="mt-2 text-sm text-[#0D0D0D]/60">
                 {category.description}
               </p>
-              <div className="mt-4 text-xs text-[#2C3628]/40">
+              <div className="mt-4 text-xs text-[#0D0D0D]/40">
                 {category.count} {category.count === 1 ? "recipe" : "recipes"}
               </div>
-              <div className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#B85C38]">
+              <div className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#2E7D32]">
                 Browse recipes
                 <svg
                   className="h-4 w-4 transition-transform group-hover:translate-x-1"
@@ -101,7 +101,7 @@ export default function RecipesPage() {
       {/* All Recipes */}
       {allRecipes.length > 0 && (
         <section>
-          <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+          <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
             All Recipes
           </h2>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -114,16 +114,16 @@ export default function RecipesPage() {
 
       {/* No Recipes Yet */}
       {allRecipes.length === 0 && (
-        <section className="rounded-[24px] border border-[#2C3628]/10 bg-white/50 p-8 text-center md:p-12">
-          <h2 className="serif text-2xl text-[#2C3628]">Recipes Coming Soon</h2>
-          <p className="mx-auto mt-4 max-w-md text-[#2C3628]/60">
+        <section className="rounded-[24px] border border-[#0D0D0D]/10 bg-white/50 p-8 text-center md:p-12">
+          <h2 className="serif text-2xl text-[#0D0D0D]">Recipes Coming Soon</h2>
+          <p className="mx-auto mt-4 max-w-md text-[#0D0D0D]/60">
             We&apos;re crafting a collection of chef-tested recipes perfect for
-            cooking with THC oil and salt. Join the waitlist to be notified when
+            cooking with THC seasonings. Join the waitlist to be notified when
             they launch.
           </p>
           <Link
             href="/#waitlist"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#2C3628] px-6 py-3 text-sm font-medium text-[#F2F0E9] transition-all hover:bg-[#1f261c]"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#0D0D0D] px-6 py-3 text-sm font-medium text-[#F7F3E8] transition-all hover:bg-[#1f261c]"
           >
             Join the Waitlist
           </Link>
@@ -132,29 +132,29 @@ export default function RecipesPage() {
 
       {/* Learn Section */}
       <section className="mt-16">
-        <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+        <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
           Before You Cook
         </h2>
         <div className="grid gap-4 md:grid-cols-2">
           <Link
-            href="/learn/cooking-with-thc-oil"
-            className="rounded-2xl border border-[#2C3628]/10 bg-white/50 p-6 transition-all hover:border-[#2C3628]/20 hover:shadow-md"
+            href="/learn/cooking-with-thc-seasoning"
+            className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
-            <h3 className="font-semibold text-[#2C3628]">
-              Cooking with THC Oil
+            <h3 className="font-semibold text-[#0D0D0D]">
+              Cooking with THC Seasoning
             </h3>
-            <p className="mt-2 text-sm text-[#2C3628]/60">
-              A complete guide to incorporating THC oil into your cooking.
+            <p className="mt-2 text-sm text-[#0D0D0D]/60">
+              A complete guide to cooking with THC seasoning sachets.
             </p>
           </Link>
           <Link
             href="/learn/edibles-timing-basics"
-            className="rounded-2xl border border-[#2C3628]/10 bg-white/50 p-6 transition-all hover:border-[#2C3628]/20 hover:shadow-md"
+            className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
-            <h3 className="font-semibold text-[#2C3628]">
+            <h3 className="font-semibold text-[#0D0D0D]">
               Edibles Timing Basics
             </h3>
-            <p className="mt-2 text-sm text-[#2C3628]/60">
+            <p className="mt-2 text-sm text-[#0D0D0D]/60">
               Understanding onset, peak, and duration for your meals.
             </p>
           </Link>

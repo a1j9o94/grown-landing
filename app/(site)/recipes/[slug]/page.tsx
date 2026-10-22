@@ -32,7 +32,7 @@ export async function generateMetadata({
 function CheckIcon() {
   return (
     <svg
-      className="h-4 w-4 flex-shrink-0 text-[#B85C38]"
+      className="h-4 w-4 flex-shrink-0 text-[#2E7D32]"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -62,11 +62,11 @@ export default async function RecipePage({
   const { frontmatter, content } = recipe;
 
   // Generate schema data
-  const recipeUrl = `https://growncooking.com/recipes/${slug}`;
+  const recipeUrl = `https://grownthc.com/recipes/${slug}`;
   const recipeSchema = generateRecipeSchema(frontmatter, recipeUrl);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://growncooking.com" },
-    { name: "Recipes", url: "https://growncooking.com/recipes" },
+    { name: "Home", url: "https://grownthc.com" },
+    { name: "Recipes", url: "https://grownthc.com/recipes" },
     { name: frontmatter.title, url: recipeUrl },
   ]);
 
@@ -94,12 +94,12 @@ export default async function RecipePage({
 
       <div className="py-12 md:py-20">
         {/* Breadcrumb */}
-        <nav className="mb-8 text-sm text-[#2C3628]/60">
-          <Link href="/recipes" className="hover:text-[#2C3628]">
+        <nav className="mb-8 text-sm text-[#0D0D0D]/60">
+          <Link href="/recipes" className="hover:text-[#0D0D0D]">
             Recipes
           </Link>
           <span className="mx-2">/</span>
-          <span className="text-[#2C3628]">{frontmatter.title}</span>
+          <span className="text-[#0D0D0D]">{frontmatter.title}</span>
         </nav>
 
         {/* Recipe Header */}
@@ -111,42 +111,42 @@ export default async function RecipePage({
               {frontmatter.difficulty.charAt(0).toUpperCase() +
                 frontmatter.difficulty.slice(1)}
             </span>
-            <span className="text-xs text-[#2C3628]/40">•</span>
-            <span className="text-sm text-[#2C3628]/60">
+            <span className="text-xs text-[#0D0D0D]/40">•</span>
+            <span className="text-sm text-[#0D0D0D]/60">
               {frontmatter.servings} servings
             </span>
           </div>
 
-          <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">
+          <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
             {frontmatter.title}
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-[#2C3628]/70">
+          <p className="mt-4 max-w-2xl text-lg text-[#0D0D0D]/70">
             {frontmatter.description}
           </p>
 
           {/* Time Info */}
           <div className="mt-8 flex flex-wrap gap-6">
             <div>
-              <div className="text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+              <div className="text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
                 Prep Time
               </div>
-              <div className="mt-1 font-medium text-[#2C3628]">
+              <div className="mt-1 font-medium text-[#0D0D0D]">
                 {formatTime(frontmatter.prepTime)}
               </div>
             </div>
             <div>
-              <div className="text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+              <div className="text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
                 Cook Time
               </div>
-              <div className="mt-1 font-medium text-[#2C3628]">
+              <div className="mt-1 font-medium text-[#0D0D0D]">
                 {formatTime(frontmatter.cookTime)}
               </div>
             </div>
             <div>
-              <div className="text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+              <div className="text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
                 Total Time
               </div>
-              <div className="mt-1 font-medium text-[#2C3628]">
+              <div className="mt-1 font-medium text-[#0D0D0D]">
                 {formatTime(frontmatter.totalTime)}
               </div>
             </div>
@@ -157,13 +157,13 @@ export default async function RecipePage({
           {/* Main Content */}
           <div>
             {/* Ingredients */}
-            <section className="mb-12 rounded-2xl border border-[#2C3628]/10 bg-white/50 p-8">
-              <h2 className="serif text-2xl text-[#2C3628]">Ingredients</h2>
+            <section className="mb-12 rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-8">
+              <h2 className="serif text-2xl text-[#0D0D0D]">Ingredients</h2>
               <ul className="mt-6 space-y-3">
                 {frontmatter.ingredients.map((ingredient, index) => (
                   <li
                     key={index}
-                    className="flex items-start gap-3 text-[#2C3628]/80"
+                    className="flex items-start gap-3 text-[#0D0D0D]/80"
                   >
                     <CheckIcon />
                     <span>{ingredient}</span>
@@ -174,16 +174,16 @@ export default async function RecipePage({
 
             {/* Instructions */}
             <section className="mb-12">
-              <h2 className="serif mb-6 text-2xl text-[#2C3628]">
+              <h2 className="serif mb-6 text-2xl text-[#0D0D0D]">
                 Instructions
               </h2>
               <ol className="space-y-6">
                 {frontmatter.instructions.map((step, index) => (
                   <li key={index} className="flex gap-4">
-                    <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-[#2C3628] text-sm font-medium text-[#F2F0E9]">
+                    <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-[#0D0D0D] text-sm font-medium text-[#F7F3E8]">
                       {index + 1}
                     </div>
-                    <p className="pt-1 text-[#2C3628]/80">{step}</p>
+                    <p className="pt-1 text-[#0D0D0D]/80">{step}</p>
                   </li>
                 ))}
               </ol>
@@ -191,10 +191,10 @@ export default async function RecipePage({
 
             {/* THC Option Callout */}
             {frontmatter.thcOption && (
-              <section className="mb-12 rounded-2xl border-2 border-[#B85C38]/20 bg-[#B85C38]/5 p-8">
-                <h2 className="flex items-center gap-2 text-xl font-semibold text-[#2C3628]">
+              <section className="mb-12 rounded-2xl border-2 border-[#2E7D32]/20 bg-[#2E7D32]/5 p-8">
+                <h2 className="flex items-center gap-2 text-xl font-semibold text-[#0D0D0D]">
                   <svg
-                    className="h-6 w-6 text-[#B85C38]"
+                    className="h-6 w-6 text-[#2E7D32]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -208,17 +208,21 @@ export default async function RecipePage({
                   </svg>
                   THC Option
                 </h2>
-                <div className="mt-4 space-y-4 text-[#2C3628]/80">
-                  {frontmatter.thcOption.oil && (
+                <div className="mt-4 space-y-4 text-[#0D0D0D]/80">
+                  {frontmatter.thcOption.seasoningSalt && (
                     <p>
-                      <strong className="text-[#2C3628]">Add THC Oil:</strong>{" "}
-                      {frontmatter.thcOption.oil}
+                      <strong className="text-[#0D0D0D]">
+                        Add Seasoning Salt:
+                      </strong>{" "}
+                      {frontmatter.thcOption.seasoningSalt}
                     </p>
                   )}
-                  {frontmatter.thcOption.salt && (
+                  {frontmatter.thcOption.chiliLime && (
                     <p>
-                      <strong className="text-[#2C3628]">Add THC Salt:</strong>{" "}
-                      {frontmatter.thcOption.salt}
+                      <strong className="text-[#0D0D0D]">
+                        Add Chili-Lime:
+                      </strong>{" "}
+                      {frontmatter.thcOption.chiliLime}
                     </p>
                   )}
                 </div>
@@ -234,11 +238,11 @@ export default async function RecipePage({
 
             {/* Storage */}
             {frontmatter.storage && (
-              <section className="mt-12 rounded-xl border border-[#2C3628]/10 bg-white/30 p-6">
-                <h3 className="font-semibold text-[#2C3628]">
+              <section className="mt-12 rounded-xl border border-[#0D0D0D]/10 bg-white/30 p-6">
+                <h3 className="font-semibold text-[#0D0D0D]">
                   Storage & Leftovers
                 </h3>
-                <p className="mt-2 text-sm text-[#2C3628]/70">
+                <p className="mt-2 text-sm text-[#0D0D0D]/70">
                   {frontmatter.storage}
                 </p>
               </section>
@@ -247,14 +251,14 @@ export default async function RecipePage({
             {/* Tips */}
             {frontmatter.tips && frontmatter.tips.length > 0 && (
               <section className="mt-8">
-                <h3 className="font-semibold text-[#2C3628]">Tips</h3>
+                <h3 className="font-semibold text-[#0D0D0D]">Tips</h3>
                 <ul className="mt-4 space-y-2">
                   {frontmatter.tips.map((tip, index) => (
                     <li
                       key={index}
-                      className="flex items-start gap-2 text-sm text-[#2C3628]/70"
+                      className="flex items-start gap-2 text-sm text-[#0D0D0D]/70"
                     >
-                      <span className="text-[#B85C38]">•</span>
+                      <span className="text-[#2E7D32]">•</span>
                       {tip}
                     </li>
                   ))}
@@ -267,27 +271,27 @@ export default async function RecipePage({
           <aside className="lg:sticky lg:top-8 lg:self-start">
             <div className="space-y-6">
               {/* Quick Info Card */}
-              <div className="rounded-2xl border border-[#2C3628]/10 bg-white/50 p-6">
-                <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+              <div className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6">
+                <h4 className="text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
                   Quick Info
                 </h4>
                 <dl className="mt-4 space-y-4">
                   <div>
-                    <dt className="text-sm text-[#2C3628]/60">Difficulty</dt>
-                    <dd className="font-medium text-[#2C3628]">
+                    <dt className="text-sm text-[#0D0D0D]/60">Difficulty</dt>
+                    <dd className="font-medium text-[#0D0D0D]">
                       {frontmatter.difficulty.charAt(0).toUpperCase() +
                         frontmatter.difficulty.slice(1)}
                     </dd>
                   </div>
                   <div>
-                    <dt className="text-sm text-[#2C3628]/60">Servings</dt>
-                    <dd className="font-medium text-[#2C3628]">
+                    <dt className="text-sm text-[#0D0D0D]/60">Servings</dt>
+                    <dd className="font-medium text-[#0D0D0D]">
                       {frontmatter.servings}
                     </dd>
                   </div>
                   <div>
-                    <dt className="text-sm text-[#2C3628]/60">Total Time</dt>
-                    <dd className="font-medium text-[#2C3628]">
+                    <dt className="text-sm text-[#0D0D0D]/60">Total Time</dt>
+                    <dd className="font-medium text-[#0D0D0D]">
                       {formatTime(frontmatter.totalTime)}
                     </dd>
                   </div>
@@ -296,8 +300,8 @@ export default async function RecipePage({
 
               {/* Related Recipes */}
               {relatedRecipes.length > 0 && (
-                <div className="rounded-2xl border border-[#2C3628]/10 bg-white/50 p-6">
-                  <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+                <div className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6">
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
                     Related Recipes
                   </h4>
                   <ul className="mt-4 space-y-3">
@@ -305,7 +309,7 @@ export default async function RecipePage({
                       <li key={related.slug}>
                         <Link
                           href={`/recipes/${related.slug}`}
-                          className="text-sm text-[#2C3628] transition-colors hover:text-[#B85C38]"
+                          className="text-sm text-[#0D0D0D] transition-colors hover:text-[#2E7D32]"
                         >
                           {related.frontmatter.title}
                         </Link>
@@ -316,13 +320,13 @@ export default async function RecipePage({
               )}
 
               {/* Learn More */}
-              <div className="rounded-2xl bg-[#2C3628] p-6 text-center">
-                <p className="text-sm text-[#F2F0E9]/80">
-                  New to cooking with THC?
+              <div className="rounded-2xl bg-[#0D0D0D] p-6 text-center">
+                <p className="text-sm text-[#F7F3E8]/80">
+                  New to cooking with THC seasoning?
                 </p>
                 <Link
-                  href="/learn/cooking-with-thc-oil"
-                  className="mt-4 inline-flex items-center gap-2 rounded-full bg-[#F2F0E9] px-4 py-2 text-sm font-medium text-[#2C3628] transition-all hover:bg-white"
+                  href="/learn/cooking-with-thc-seasoning"
+                  className="mt-4 inline-flex items-center gap-2 rounded-full bg-[#F7F3E8] px-4 py-2 text-sm font-medium text-[#0D0D0D] transition-all hover:bg-white"
                 >
                   Read the Guide
                 </Link>
@@ -332,10 +336,10 @@ export default async function RecipePage({
         </div>
 
         {/* Back Link */}
-        <div className="mt-16 border-t border-[#2C3628]/10 pt-8">
+        <div className="mt-16 border-t border-[#0D0D0D]/10 pt-8">
           <Link
             href="/recipes"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#B85C38] hover:text-[#9A4A2B]"
+            className="inline-flex items-center gap-2 text-sm font-medium text-[#2E7D32] hover:text-[#1B5E20]"
           >
             <svg
               className="h-4 w-4"

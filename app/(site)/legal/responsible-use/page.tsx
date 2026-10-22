@@ -11,27 +11,27 @@ export default function ResponsibleUsePage() {
   return (
     <div className="py-12 md:py-20">
       {/* Breadcrumb */}
-      <nav className="mb-8 text-sm text-[#2C3628]/60">
-        <Link href="/" className="hover:text-[#2C3628]">
+      <nav className="mb-8 text-sm text-[#0D0D0D]/60">
+        <Link href="/" className="hover:text-[#0D0D0D]">
           Home
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#2C3628]">Responsible Use</span>
+        <span className="text-[#0D0D0D]">Responsible Use</span>
       </nav>
 
       <article className="prose prose-lg mx-auto max-w-3xl">
-        <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">
+        <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
           Responsible Use
         </h1>
-        <p className="mt-6 text-lg text-[#2C3628]/70">
+        <p className="mt-6 text-lg text-[#0D0D0D]/70">
           THC affects everyone differently. We believe in providing clear
           guidance so you can enjoy our products safely and responsibly.
         </p>
 
-        <div className="mt-12 space-y-12 text-[#2C3628]/80">
+        <div className="mt-12 space-y-12 text-[#0D0D0D]/80">
           {/* Start Low, Go Slow */}
           <section className="rounded-[24px] bg-white/50 p-8">
-            <h2 className="serif text-2xl text-[#2C3628]">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               Start Low, Go Slow
             </h2>
             <p className="mt-4">
@@ -50,15 +50,19 @@ export default function ResponsibleUsePage() {
 
           {/* Know Your Dose */}
           <section className="rounded-[24px] bg-white/50 p-8">
-            <h2 className="serif text-2xl text-[#2C3628]">Know Your Dose</h2>
+            <h2 className="serif text-2xl text-[#0D0D0D]">Know Your Dose</h2>
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-xl border border-[#2C3628]/10 p-4">
-                <h3 className="font-semibold text-[#2C3628]">Grown Oil</h3>
-                <p className="mt-2 text-sm">5mg THC per teaspoon</p>
+              <div className="rounded-xl border border-[#0D0D0D]/10 p-4">
+                <h3 className="font-semibold text-[#0D0D0D]">
+                  Grown Seasoning Salt
+                </h3>
+                <p className="mt-2 text-sm">5mg THC per sachet</p>
               </div>
-              <div className="rounded-xl border border-[#2C3628]/10 p-4">
-                <h3 className="font-semibold text-[#2C3628]">Grown Salt</h3>
-                <p className="mt-2 text-sm">2mg THC per pinch</p>
+              <div className="rounded-xl border border-[#0D0D0D]/10 p-4">
+                <h3 className="font-semibold text-[#0D0D0D]">
+                  Grown Chili-Lime Seasoning
+                </h3>
+                <p className="mt-2 text-sm">5mg THC per sachet</p>
               </div>
             </div>
             <p className="mt-4">
@@ -69,9 +73,9 @@ export default function ResponsibleUsePage() {
 
           {/* Safety Guidelines */}
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">Safety Guidelines</h2>
+            <h2 className="serif text-2xl text-[#0D0D0D]">Safety Guidelines</h2>
             <div className="mt-6 space-y-4">
-              <div className="flex items-start gap-4 rounded-xl border border-[#2C3628]/10 bg-white/30 p-4">
+              <div className="flex items-start gap-4 rounded-xl border border-[#0D0D0D]/10 bg-white/30 p-4">
                 <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-red-100 text-red-600">
                   <svg
                     className="h-5 w-5"
@@ -88,17 +92,17 @@ export default function ResponsibleUsePage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#2C3628]">
+                  <h3 className="font-semibold text-[#0D0D0D]">
                     Do Not Drive or Operate Machinery
                   </h3>
-                  <p className="mt-1 text-sm text-[#2C3628]/60">
+                  <p className="mt-1 text-sm text-[#0D0D0D]/60">
                     THC impairs coordination and reaction time. Never drive or
                     operate heavy machinery while under the influence.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 rounded-xl border border-[#2C3628]/10 bg-white/30 p-4">
+              <div className="flex items-start gap-4 rounded-xl border border-[#0D0D0D]/10 bg-white/30 p-4">
                 <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-red-100 text-red-600">
                   <svg
                     className="h-5 w-5"
@@ -115,17 +119,17 @@ export default function ResponsibleUsePage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#2C3628]">
+                  <h3 className="font-semibold text-[#0D0D0D]">
                     Keep Away from Children & Pets
                   </h3>
-                  <p className="mt-1 text-sm text-[#2C3628]/60">
+                  <p className="mt-1 text-sm text-[#0D0D0D]/60">
                     Store all THC products in a secure location out of reach of
                     children and pets. THC can be harmful to both.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 rounded-xl border border-[#2C3628]/10 bg-white/30 p-4">
+              <div className="flex items-start gap-4 rounded-xl border border-[#0D0D0D]/10 bg-white/30 p-4">
                 <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-600">
                   <svg
                     className="h-5 w-5"
@@ -142,17 +146,17 @@ export default function ResponsibleUsePage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#2C3628]">
+                  <h3 className="font-semibold text-[#0D0D0D]">
                     Pregnancy & Nursing
                   </h3>
-                  <p className="mt-1 text-sm text-[#2C3628]/60">
+                  <p className="mt-1 text-sm text-[#0D0D0D]/60">
                     Do not use THC products if you are pregnant or nursing.
                     Consult your healthcare provider.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 rounded-xl border border-[#2C3628]/10 bg-white/30 p-4">
+              <div className="flex items-start gap-4 rounded-xl border border-[#0D0D0D]/10 bg-white/30 p-4">
                 <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-600">
                   <svg
                     className="h-5 w-5"
@@ -169,10 +173,10 @@ export default function ResponsibleUsePage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#2C3628]">
+                  <h3 className="font-semibold text-[#0D0D0D]">
                     Medical Conditions
                   </h3>
-                  <p className="mt-1 text-sm text-[#2C3628]/60">
+                  <p className="mt-1 text-sm text-[#0D0D0D]/60">
                     If you have a medical condition or take medications, consult
                     your doctor before using THC products.
                   </p>
@@ -182,8 +186,8 @@ export default function ResponsibleUsePage() {
           </section>
 
           {/* If You Consume Too Much */}
-          <section className="rounded-[24px] border-2 border-[#B85C38]/20 bg-[#B85C38]/5 p-8">
-            <h2 className="serif text-2xl text-[#2C3628]">
+          <section className="rounded-[24px] border-2 border-[#2E7D32]/20 bg-[#2E7D32]/5 p-8">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               If You Consume Too Much
             </h2>
             <p className="mt-4">
@@ -204,7 +208,7 @@ export default function ResponsibleUsePage() {
 
           {/* Legal Notice */}
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">Legal Notice</h2>
+            <h2 className="serif text-2xl text-[#0D0D0D]">Legal Notice</h2>
             <p className="mt-4">
               Grown products are only legal in Illinois and are intended for
               adults 21 and older. It is illegal to transport THC products

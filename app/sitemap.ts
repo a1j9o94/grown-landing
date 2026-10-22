@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllLearnSlugs, getAllRecipeSlugs } from "@/lib/content";
 
-const BASE_URL = "https://growncooking.com";
+const BASE_URL = "https://grownthc.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const learnSlugs = getAllLearnSlugs();
@@ -22,13 +22,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/products/thc-oil`,
+      url: `${BASE_URL}/products/seasoning-salt`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/products/thc-salt`,
+      url: `${BASE_URL}/products/chili-lime-seasoning`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

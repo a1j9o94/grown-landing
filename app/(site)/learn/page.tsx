@@ -6,7 +6,7 @@ import { getLearnPostsByCategory } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Learn | Grown",
   description:
-    "Guides and resources for cooking with THC oil and salt. From timing basics to flavor pairing, master the art of elevated cooking.",
+    "Guides and resources for cooking with THC seasoning. From timing basics to flavor pairing, master the art of elevated hosting.",
 };
 
 export default function LearnPage() {
@@ -43,15 +43,15 @@ export default function LearnPage() {
             priority
           />
           {/* Overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#2C3628]/60 via-[#2C3628]/50 to-[#2C3628]/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/60 via-[#0D0D0D]/50 to-[#0D0D0D]/70" />
         </div>
 
         {/* Content */}
         <div className="relative px-6 py-16 text-center md:py-24 lg:py-32">
-          <h1 className="serif text-4xl text-[#F2F0E9] md:text-5xl lg:text-6xl">
+          <h1 className="serif text-4xl text-[#F7F3E8] md:text-5xl lg:text-6xl">
             Learn
           </h1>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-[#F2F0E9]/80 md:text-xl">
+          <p className="mx-auto mt-4 max-w-xl text-lg text-[#F7F3E8]/80 md:text-xl">
             Guides and resources for cooking with THC. From timing basics to
             flavor pairing, become a confident host.
           </p>
@@ -61,7 +61,7 @@ export default function LearnPage() {
       {/* Guides by Category */}
       {allCategories.map((category) => (
         <section key={category} className="mb-12">
-          <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+          <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
             {category}
           </h2>
           <div className="grid gap-4 md:grid-cols-2">
@@ -69,15 +69,15 @@ export default function LearnPage() {
               <Link
                 key={post.slug}
                 href={`/learn/${post.slug}`}
-                className="group rounded-2xl border border-[#2C3628]/10 bg-white/50 p-6 transition-all hover:border-[#2C3628]/20 hover:shadow-md"
+                className="group rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
               >
-                <h3 className="text-lg font-semibold text-[#2C3628] group-hover:text-[#B85C38]">
+                <h3 className="text-lg font-semibold text-[#0D0D0D] group-hover:text-[#2E7D32]">
                   {post.frontmatter.title}
                 </h3>
-                <p className="mt-2 text-sm text-[#2C3628]/60">
+                <p className="mt-2 text-sm text-[#0D0D0D]/60">
                   {post.frontmatter.description}
                 </p>
-                <div className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#B85C38]">
+                <div className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#2E7D32]">
                   Read guide
                   <svg
                     className="h-4 w-4 transition-transform group-hover:translate-x-1"
@@ -100,16 +100,16 @@ export default function LearnPage() {
       ))}
 
       {/* CTA */}
-      <section className="mt-16 rounded-[24px] bg-[#2C3628] p-8 text-center md:p-12">
-        <h2 className="serif text-2xl text-[#F2F0E9] md:text-3xl">
+      <section className="mt-16 rounded-[24px] bg-[#0D0D0D] p-8 text-center md:p-12">
+        <h2 className="serif text-2xl text-[#F7F3E8] md:text-3xl">
           Ready to start cooking?
         </h2>
-        <p className="mx-auto mt-4 max-w-md text-[#F2F0E9]/70">
+        <p className="mx-auto mt-4 max-w-md text-[#F7F3E8]/70">
           Browse our collection of THC-friendly recipes designed for home cooks.
         </p>
         <Link
           href="/recipes"
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#F2F0E9] px-6 py-3 text-sm font-medium text-[#2C3628] transition-all hover:bg-white"
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#F7F3E8] px-6 py-3 text-sm font-medium text-[#0D0D0D] transition-all hover:bg-white"
         >
           View Recipes
           <svg

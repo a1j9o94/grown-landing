@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 function CheckIcon() {
   return (
     <svg
-      className="h-5 w-5 text-[#B85C38]"
+      className="h-5 w-5 text-[#2E7D32]"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -28,7 +28,7 @@ function CheckIcon() {
 function ShieldIcon() {
   return (
     <svg
-      className="h-8 w-8 text-[#B85C38]"
+      className="h-8 w-8 text-[#2E7D32]"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -47,20 +47,20 @@ export default function TestingQualityPage() {
   return (
     <div className="py-12 md:py-20">
       {/* Breadcrumb */}
-      <nav className="mb-8 text-sm text-[#2C3628]/60">
-        <Link href="/products" className="hover:text-[#2C3628]">
+      <nav className="mb-8 text-sm text-[#0D0D0D]/60">
+        <Link href="/products" className="hover:text-[#0D0D0D]">
           Products
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#2C3628]">Testing & Quality</span>
+        <span className="text-[#0D0D0D]">Testing & Quality</span>
       </nav>
 
       {/* Hero */}
       <div className="mb-16 max-w-3xl">
-        <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">
+        <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
           Quality You Can Trust
         </h1>
-        <p className="mt-6 text-lg leading-relaxed text-[#2C3628]/70">
+        <p className="mt-6 text-lg leading-relaxed text-[#0D0D0D]/70">
           Every Grown product undergoes rigorous third-party testing before it
           reaches your kitchen. We believe transparency and consistency are
           non-negotiable when it comes to THC products.
@@ -71,10 +71,10 @@ export default function TestingQualityPage() {
       <div className="grid gap-8 md:grid-cols-3">
         <div className="rounded-[24px] bg-white/50 p-8">
           <ShieldIcon />
-          <h3 className="mt-6 text-xl font-semibold text-[#2C3628]">
+          <h3 className="mt-6 text-xl font-semibold text-[#0D0D0D]">
             Third-Party Tested
           </h3>
-          <p className="mt-3 text-[#2C3628]/70">
+          <p className="mt-3 text-[#0D0D0D]/70">
             Every batch is tested by independent, state-licensed laboratories
             for potency, purity, and safety.
           </p>
@@ -82,10 +82,10 @@ export default function TestingQualityPage() {
 
         <div className="rounded-[24px] bg-white/50 p-8">
           <ShieldIcon />
-          <h3 className="mt-6 text-xl font-semibold text-[#2C3628]">
+          <h3 className="mt-6 text-xl font-semibold text-[#0D0D0D]">
             Consistent Dosing
           </h3>
-          <p className="mt-3 text-[#2C3628]/70">
+          <p className="mt-3 text-[#0D0D0D]/70">
             Our precision manufacturing process ensures the same experience
             every time. No surprises, just reliable results.
           </p>
@@ -93,10 +93,10 @@ export default function TestingQualityPage() {
 
         <div className="rounded-[24px] bg-white/50 p-8">
           <ShieldIcon />
-          <h3 className="mt-6 text-xl font-semibold text-[#2C3628]">
+          <h3 className="mt-6 text-xl font-semibold text-[#0D0D0D]">
             Clean Ingredients
           </h3>
-          <p className="mt-3 text-[#2C3628]/70">
+          <p className="mt-3 text-[#0D0D0D]/70">
             No solvents, no additives, no junk. Just premium ingredients you
             would be proud to serve at your dinner table.
           </p>
@@ -105,11 +105,11 @@ export default function TestingQualityPage() {
 
       {/* What We Test For */}
       <section className="mt-24">
-        <h2 className="serif text-3xl text-[#2C3628]">What We Test For</h2>
+        <h2 className="serif text-3xl text-[#0D0D0D]">What We Test For</h2>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          <div className="rounded-2xl border border-[#2C3628]/10 bg-white/30 p-6">
-            <h4 className="font-semibold text-[#2C3628]">Potency Analysis</h4>
-            <ul className="mt-4 space-y-3 text-sm text-[#2C3628]/70">
+          <div className="rounded-2xl border border-[#0D0D0D]/10 bg-white/30 p-6">
+            <h4 className="font-semibold text-[#0D0D0D]">Potency Analysis</h4>
+            <ul className="mt-4 space-y-3 text-sm text-[#0D0D0D]/70">
               <li className="flex items-center gap-3">
                 <CheckIcon />
                 THC concentration per serving
@@ -125,9 +125,9 @@ export default function TestingQualityPage() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-[#2C3628]/10 bg-white/30 p-6">
-            <h4 className="font-semibold text-[#2C3628]">Purity Screening</h4>
-            <ul className="mt-4 space-y-3 text-sm text-[#2C3628]/70">
+          <div className="rounded-2xl border border-[#0D0D0D]/10 bg-white/30 p-6">
+            <h4 className="font-semibold text-[#0D0D0D]">Purity Screening</h4>
+            <ul className="mt-4 space-y-3 text-sm text-[#0D0D0D]/70">
               <li className="flex items-center gap-3">
                 <CheckIcon />
                 Pesticide residue testing
@@ -143,9 +143,9 @@ export default function TestingQualityPage() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-[#2C3628]/10 bg-white/30 p-6">
-            <h4 className="font-semibold text-[#2C3628]">Solvent Analysis</h4>
-            <ul className="mt-4 space-y-3 text-sm text-[#2C3628]/70">
+          <div className="rounded-2xl border border-[#0D0D0D]/10 bg-white/30 p-6">
+            <h4 className="font-semibold text-[#0D0D0D]">Solvent Analysis</h4>
+            <ul className="mt-4 space-y-3 text-sm text-[#0D0D0D]/70">
               <li className="flex items-center gap-3">
                 <CheckIcon />
                 Residual solvent detection
@@ -157,9 +157,9 @@ export default function TestingQualityPage() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-[#2C3628]/10 bg-white/30 p-6">
-            <h4 className="font-semibold text-[#2C3628]">Quality Assurance</h4>
-            <ul className="mt-4 space-y-3 text-sm text-[#2C3628]/70">
+          <div className="rounded-2xl border border-[#0D0D0D]/10 bg-white/30 p-6">
+            <h4 className="font-semibold text-[#0D0D0D]">Quality Assurance</h4>
+            <ul className="mt-4 space-y-3 text-sm text-[#0D0D0D]/70">
               <li className="flex items-center gap-3">
                 <CheckIcon />
                 Visual and texture inspection
@@ -175,12 +175,12 @@ export default function TestingQualityPage() {
 
       {/* CTA */}
       <section className="mt-24 text-center">
-        <p className="text-lg text-[#2C3628]/70">
+        <p className="text-lg text-[#0D0D0D]/70">
           Have questions about our testing process?
         </p>
         <Link
           href="/contact"
-          className="mt-6 inline-flex items-center gap-2 rounded-full border border-[#2C3628]/20 px-6 py-3 text-sm font-medium text-[#2C3628] transition-all hover:bg-[#2C3628]/5"
+          className="mt-6 inline-flex items-center gap-2 rounded-full border border-[#0D0D0D]/20 px-6 py-3 text-sm font-medium text-[#0D0D0D] transition-all hover:bg-[#0D0D0D]/5"
         >
           Contact Us
         </Link>

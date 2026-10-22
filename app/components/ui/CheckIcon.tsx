@@ -1,7 +1,7 @@
 export function CheckIcon() {
   return (
     <svg
-      className="h-4 w-4 text-[#B85C38]"
+      className="h-4 w-4 text-[#2E7D32]"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
