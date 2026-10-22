@@ -13,18 +13,18 @@ export default function DessertsPage() {
   return (
     <div className="py-12 md:py-20">
       {/* Breadcrumb */}
-      <nav className="mb-8 text-sm text-[#2C3628]/60">
-        <Link href="/recipes" className="hover:text-[#2C3628]">
+      <nav className="mb-8 text-sm text-[#0D0D0D]/60">
+        <Link href="/recipes" className="hover:text-[#0D0D0D]">
           Recipes
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#2C3628]">Desserts</span>
+        <span className="text-[#0D0D0D]">Desserts</span>
       </nav>
 
       {/* Header */}
       <div className="mb-12">
-        <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">Desserts</h1>
-        <p className="mt-4 text-lg text-[#2C3628]/70">
+        <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">Desserts</h1>
+        <p className="mt-4 text-lg text-[#0D0D0D]/70">
           Sweet endings to elevated meals.
         </p>
       </div>
@@ -36,28 +36,28 @@ export default function DessertsPage() {
             <Link
               key={recipe.slug}
               href={`/recipes/${recipe.slug}`}
-              className="group rounded-2xl border border-[#2C3628]/10 bg-white/50 p-6 transition-all hover:border-[#2C3628]/20 hover:shadow-md"
+              className="group rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
             >
               <div className="mb-3 flex items-center gap-2">
                 <span className="rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800">
                   {recipe.frontmatter.difficulty}
                 </span>
-                <span className="text-xs text-[#2C3628]/40">•</span>
-                <span className="text-xs text-[#2C3628]/60">
+                <span className="text-xs text-[#0D0D0D]/40">•</span>
+                <span className="text-xs text-[#0D0D0D]/60">
                   {formatTime(recipe.frontmatter.totalTime)}
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-[#2C3628] group-hover:text-[#B85C38]">
+              <h3 className="text-lg font-semibold text-[#0D0D0D] group-hover:text-[#2E7D32]">
                 {recipe.frontmatter.title}
               </h3>
-              <p className="mt-2 text-sm text-[#2C3628]/60 line-clamp-2">
+              <p className="mt-2 text-sm text-[#0D0D0D]/60 line-clamp-2">
                 {recipe.frontmatter.description}
               </p>
               <div className="mt-4 flex items-center justify-between">
-                <span className="text-xs text-[#2C3628]/40">
+                <span className="text-xs text-[#0D0D0D]/40">
                   {recipe.frontmatter.servings} servings
                 </span>
-                <span className="inline-flex items-center gap-1 text-sm font-medium text-[#B85C38]">
+                <span className="inline-flex items-center gap-1 text-sm font-medium text-[#2E7D32]">
                   View recipe
                   <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -68,12 +68,12 @@ export default function DessertsPage() {
           ))}
         </div>
       ) : (
-        <div className="rounded-[24px] border border-[#2C3628]/10 bg-white/50 p-12 text-center">
-          <h2 className="serif text-2xl text-[#2C3628]">Coming Soon</h2>
-          <p className="mx-auto mt-4 max-w-md text-[#2C3628]/60">
+        <div className="rounded-[24px] border border-[#0D0D0D]/10 bg-white/50 p-12 text-center">
+          <h2 className="serif text-2xl text-[#0D0D0D]">Coming Soon</h2>
+          <p className="mx-auto mt-4 max-w-md text-[#0D0D0D]/60">
             We&apos;re testing dessert recipes. Join the waitlist to be notified.
           </p>
-          <Link href="/#waitlist" className="mt-8 inline-flex rounded-full bg-[#2C3628] px-6 py-3 text-sm font-medium text-[#F2F0E9]">
+          <Link href="/#waitlist" className="mt-8 inline-flex rounded-full bg-[#0D0D0D] px-6 py-3 text-sm font-medium text-[#F7F3E8]">
             Join the Waitlist
           </Link>
         </div>
@@ -81,19 +81,19 @@ export default function DessertsPage() {
 
       {/* Other Categories */}
       <section className="mt-16">
-        <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">Other Categories</h2>
+        <h2 className="mb-6 text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">Other Categories</h2>
         <div className="flex flex-wrap gap-3">
-          <Link href="/recipes/dinners" className="rounded-full border border-[#2C3628]/20 px-4 py-2 text-sm text-[#2C3628] hover:bg-[#2C3628]/5">
+          <Link href="/recipes/dinners" className="rounded-full border border-[#0D0D0D]/20 px-4 py-2 text-sm text-[#0D0D0D] hover:bg-[#0D0D0D]/5">
             Dinners
           </Link>
-          <Link href="/recipes/snacks-sides" className="rounded-full border border-[#2C3628]/20 px-4 py-2 text-sm text-[#2C3628] hover:bg-[#2C3628]/5">
+          <Link href="/recipes/snacks-sides" className="rounded-full border border-[#0D0D0D]/20 px-4 py-2 text-sm text-[#0D0D0D] hover:bg-[#0D0D0D]/5">
             Snacks & Sides
           </Link>
         </div>
       </section>
 
       <div className="mt-12">
-        <Link href="/recipes" className="inline-flex items-center gap-2 text-sm font-medium text-[#B85C38]">
+        <Link href="/recipes" className="inline-flex items-center gap-2 text-sm font-medium text-[#2E7D32]">
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>

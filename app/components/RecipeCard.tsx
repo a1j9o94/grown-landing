@@ -27,7 +27,7 @@ export function RecipeCard({ recipe, showImage = true, size = "large" }: RecipeC
     return (
       <Link
         href={`/recipes/${slug}`}
-        className="group flex items-center gap-4 rounded-xl border border-[#2C3628]/10 bg-white/50 p-4 transition-all hover:border-[#2C3628]/20 hover:shadow-md"
+        className="group flex items-center gap-4 rounded-xl border border-[#0D0D0D]/10 bg-white/50 p-4 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
       >
         {showImage && frontmatter.image && (
           <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg">
@@ -40,17 +40,17 @@ export function RecipeCard({ recipe, showImage = true, size = "large" }: RecipeC
           </div>
         )}
         <div className="flex-1 min-w-0">
-          <h3 className="font-semibold text-[#2C3628] group-hover:text-[#B85C38] truncate">
+          <h3 className="font-semibold text-[#0D0D0D] group-hover:text-[#2E7D32] truncate">
             {frontmatter.title}
           </h3>
-          <div className="mt-1 flex items-center gap-2 text-xs text-[#2C3628]/40">
+          <div className="mt-1 flex items-center gap-2 text-xs text-[#0D0D0D]/40">
             <span>{categoryNames[frontmatter.category] || frontmatter.category}</span>
             <span>•</span>
             <span>{frontmatter.servings} servings</span>
           </div>
         </div>
         <svg
-          className="h-5 w-5 flex-shrink-0 text-[#B85C38] transition-transform group-hover:translate-x-1"
+          className="h-5 w-5 flex-shrink-0 text-[#2E7D32] transition-transform group-hover:translate-x-1"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -64,11 +64,11 @@ export function RecipeCard({ recipe, showImage = true, size = "large" }: RecipeC
   return (
     <Link
       href={`/recipes/${slug}`}
-      className="group overflow-hidden rounded-2xl border border-[#2C3628]/10 bg-white/50 transition-all hover:border-[#2C3628]/20 hover:shadow-md"
+      className="group overflow-hidden rounded-2xl border border-[#0D0D0D]/10 bg-white/50 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
     >
       {/* Image */}
       {showImage && frontmatter.image && (
-        <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#E8EAE4]">
+        <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#E8F5E9]">
           <Image
             src={frontmatter.image}
             alt={frontmatter.title}
@@ -84,22 +84,22 @@ export function RecipeCard({ recipe, showImage = true, size = "large" }: RecipeC
           <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${difficultyColors[frontmatter.difficulty]}`}>
             {frontmatter.difficulty}
           </span>
-          <span className="text-xs text-[#2C3628]/40">•</span>
-          <span className="text-xs text-[#2C3628]/60">
+          <span className="text-xs text-[#0D0D0D]/40">•</span>
+          <span className="text-xs text-[#0D0D0D]/60">
             {formatTime(frontmatter.totalTime)}
           </span>
         </div>
-        <h3 className="text-lg font-semibold text-[#2C3628] group-hover:text-[#B85C38]">
+        <h3 className="text-lg font-semibold text-[#0D0D0D] group-hover:text-[#2E7D32]">
           {frontmatter.title}
         </h3>
-        <p className="mt-2 text-sm text-[#2C3628]/60 line-clamp-2">
+        <p className="mt-2 text-sm text-[#0D0D0D]/60 line-clamp-2">
           {frontmatter.description}
         </p>
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-xs text-[#2C3628]/40">
+          <span className="text-xs text-[#0D0D0D]/40">
             {frontmatter.servings} servings
           </span>
-          <span className="inline-flex items-center gap-1 text-sm font-medium text-[#B85C38]">
+          <span className="inline-flex items-center gap-1 text-sm font-medium text-[#2E7D32]">
             View recipe
             <svg
               className="h-4 w-4 transition-transform group-hover:translate-x-1"

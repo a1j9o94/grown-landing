@@ -129,7 +129,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/workspace/group/grown-workspace/landing/app/generated/prisma-client",
+      "value": "/home/sandbox/grown-landing/app/generated/prisma-client",
       "fromEnvVar": null
     },
     "config": {
@@ -138,12 +138,12 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "linux-arm64-openssl-3.0.x",
+        "value": "debian-openssl-3.0.x",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/workspace/group/grown-workspace/landing/prisma/schema.prisma",
+    "sourceFilePath": "/home/sandbox/grown-landing/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {

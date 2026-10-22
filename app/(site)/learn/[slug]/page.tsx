@@ -56,25 +56,25 @@ export default async function LearnGuidePage({
   return (
     <div className="py-12 md:py-20">
       {/* Breadcrumb */}
-      <nav className="mb-8 text-sm text-[#2C3628]/60">
-        <Link href="/learn" className="hover:text-[#2C3628]">
+      <nav className="mb-8 text-sm text-[#0D0D0D]/60">
+        <Link href="/learn" className="hover:text-[#0D0D0D]">
           Learn
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#2C3628]">{post.frontmatter.title}</span>
+        <span className="text-[#0D0D0D]">{post.frontmatter.title}</span>
       </nav>
 
       <div className="grid gap-12 lg:grid-cols-[1fr,280px]">
         {/* Main Article */}
         <article className="max-w-3xl">
           <header className="mb-12">
-            <div className="mb-4 text-xs font-bold uppercase tracking-widest text-[#B85C38]">
+            <div className="mb-4 text-xs font-bold uppercase tracking-widest text-[#2E7D32]">
               {post.frontmatter.category}
             </div>
-            <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">
+            <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
               {post.frontmatter.title}
             </h1>
-            <p className="mt-4 text-lg text-[#2C3628]/70">
+            <p className="mt-4 text-lg text-[#0D0D0D]/70">
               {post.frontmatter.description}
             </p>
           </header>
@@ -86,20 +86,20 @@ export default async function LearnGuidePage({
 
           {/* FAQ Section (if present) */}
           {post.frontmatter.faqs && post.frontmatter.faqs.length > 0 && (
-            <section className="mt-16 border-t border-[#2C3628]/10 pt-12">
-              <h2 className="serif text-2xl text-[#2C3628]">
+            <section className="mt-16 border-t border-[#0D0D0D]/10 pt-12">
+              <h2 className="serif text-2xl text-[#0D0D0D]">
                 Frequently Asked Questions
               </h2>
               <div className="mt-8 space-y-6">
                 {post.frontmatter.faqs.map((faq, index) => (
                   <div
                     key={index}
-                    className="rounded-xl border border-[#2C3628]/10 bg-white/50 p-6"
+                    className="rounded-xl border border-[#0D0D0D]/10 bg-white/50 p-6"
                   >
-                    <h3 className="font-semibold text-[#2C3628]">
+                    <h3 className="font-semibold text-[#0D0D0D]">
                       {faq.question}
                     </h3>
-                    <p className="mt-2 text-[#2C3628]/70">{faq.answer}</p>
+                    <p className="mt-2 text-[#0D0D0D]/70">{faq.answer}</p>
                   </div>
                 ))}
               </div>
@@ -107,10 +107,10 @@ export default async function LearnGuidePage({
           )}
 
           {/* Back to Learn */}
-          <div className="mt-16 border-t border-[#2C3628]/10 pt-8">
+          <div className="mt-16 border-t border-[#0D0D0D]/10 pt-8">
             <Link
               href="/learn"
-              className="inline-flex items-center gap-2 text-sm font-medium text-[#B85C38] hover:text-[#9A4A2B]"
+              className="inline-flex items-center gap-2 text-sm font-medium text-[#2E7D32] hover:text-[#1B5E20]"
             >
               <svg
                 className="h-4 w-4"
@@ -135,8 +135,8 @@ export default async function LearnGuidePage({
           <div className="sticky top-8 space-y-8">
             {/* Related Guides */}
             {relatedPosts.length > 0 && (
-              <div className="rounded-2xl border border-[#2C3628]/10 bg-white/50 p-6">
-                <h4 className="text-xs font-bold uppercase tracking-widest text-[#2C3628]/40">
+              <div className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6">
+                <h4 className="text-xs font-bold uppercase tracking-widest text-[#0D0D0D]/40">
                   Related Guides
                 </h4>
                 <ul className="mt-4 space-y-3">
@@ -144,7 +144,7 @@ export default async function LearnGuidePage({
                     <li key={related.slug}>
                       <Link
                         href={`/learn/${related.slug}`}
-                        className="text-sm text-[#2C3628] transition-colors hover:text-[#B85C38]"
+                        className="text-sm text-[#0D0D0D] transition-colors hover:text-[#2E7D32]"
                       >
                         {related.frontmatter.title}
                       </Link>
@@ -155,13 +155,13 @@ export default async function LearnGuidePage({
             )}
 
             {/* Products CTA */}
-            <div className="rounded-2xl bg-[#2C3628] p-6 text-center">
-              <p className="text-sm text-[#F2F0E9]/80">
+            <div className="rounded-2xl bg-[#0D0D0D] p-6 text-center">
+              <p className="text-sm text-[#F7F3E8]/80">
                 Ready to cook with Grown?
               </p>
               <Link
                 href="/products"
-                className="mt-4 inline-flex items-center gap-2 rounded-full bg-[#F2F0E9] px-4 py-2 text-sm font-medium text-[#2C3628] transition-all hover:bg-white"
+                className="mt-4 inline-flex items-center gap-2 rounded-full bg-[#F7F3E8] px-4 py-2 text-sm font-medium text-[#0D0D0D] transition-all hover:bg-white"
               >
                 View Products
               </Link>

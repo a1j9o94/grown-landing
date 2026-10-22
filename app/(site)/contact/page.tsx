@@ -12,10 +12,10 @@ export default function ContactPage() {
     <div className="py-12 md:py-20">
       {/* Hero */}
       <div className="mb-16 max-w-2xl">
-        <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">
+        <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
           Get in Touch
         </h1>
-        <p className="mt-6 text-lg text-[#2C3628]/70">
+        <p className="mt-6 text-lg text-[#0D0D0D]/70">
           Questions about our products, interested in partnerships, or just want
           to say hello? We&apos;d love to hear from you.
         </p>
@@ -24,15 +24,15 @@ export default function ContactPage() {
       {/* Contact Options */}
       <div className="grid gap-6 md:grid-cols-2">
         <div className="rounded-[24px] bg-white/50 p-8">
-          <h2 className="text-xl font-semibold text-[#2C3628]">
+          <h2 className="text-xl font-semibold text-[#0D0D0D]">
             General Inquiries
           </h2>
-          <p className="mt-3 text-[#2C3628]/70">
+          <p className="mt-3 text-[#0D0D0D]/70">
             For questions about our products, availability, or anything else.
           </p>
           <a
             href="mailto:adrian@grownthc.com"
-            className="mt-6 inline-flex items-center gap-2 text-[#B85C38] hover:text-[#9A4A2B]"
+            className="mt-6 inline-flex items-center gap-2 text-[#2E7D32] hover:text-[#1B5E20]"
           >
             <svg
               className="h-5 w-5"
@@ -52,13 +52,13 @@ export default function ContactPage() {
         </div>
 
         <div className="rounded-[24px] bg-white/50 p-8">
-          <h2 className="text-xl font-semibold text-[#2C3628]">Partnerships</h2>
-          <p className="mt-3 text-[#2C3628]/70">
+          <h2 className="text-xl font-semibold text-[#0D0D0D]">Partnerships</h2>
+          <p className="mt-3 text-[#0D0D0D]/70">
             Interested in retail, wholesale, or collaboration opportunities.
           </p>
           <a
             href="mailto:adrian@grownthc.com"
-            className="mt-6 inline-flex items-center gap-2 text-[#B85C38] hover:text-[#9A4A2B]"
+            className="mt-6 inline-flex items-center gap-2 text-[#2E7D32] hover:text-[#1B5E20]"
           >
             <svg
               className="h-5 w-5"
@@ -78,13 +78,13 @@ export default function ContactPage() {
         </div>
 
         <div className="rounded-[24px] bg-white/50 p-8">
-          <h2 className="text-xl font-semibold text-[#2C3628]">Press</h2>
-          <p className="mt-3 text-[#2C3628]/70">
+          <h2 className="text-xl font-semibold text-[#0D0D0D]">Press</h2>
+          <p className="mt-3 text-[#0D0D0D]/70">
             For media inquiries, interviews, and press kit requests.
           </p>
           <a
             href="mailto:adrian@grownthc.com"
-            className="mt-6 inline-flex items-center gap-2 text-[#B85C38] hover:text-[#9A4A2B]"
+            className="mt-6 inline-flex items-center gap-2 text-[#2E7D32] hover:text-[#1B5E20]"
           >
             <svg
               className="h-5 w-5"
@@ -104,28 +104,28 @@ export default function ContactPage() {
         </div>
 
         <div className="rounded-[24px] bg-white/50 p-8">
-          <h2 className="text-xl font-semibold text-[#2C3628]">Location</h2>
-          <p className="mt-3 text-[#2C3628]/70">
+          <h2 className="text-xl font-semibold text-[#0D0D0D]">Location</h2>
+          <p className="mt-3 text-[#0D0D0D]/70">
             Based in Illinois. Products available to Illinois residents only at
             launch.
           </p>
-          <p className="mt-6 text-sm text-[#2C3628]/50">
+          <p className="mt-6 text-sm text-[#0D0D0D]/50">
             We do not have a public storefront.
           </p>
         </div>
       </div>
 
       {/* FAQ CTA */}
-      <section className="mt-16 rounded-[24px] border border-[#2C3628]/10 bg-white/30 p-8 text-center">
-        <h2 className="text-xl font-semibold text-[#2C3628]">
+      <section className="mt-16 rounded-[24px] border border-[#0D0D0D]/10 bg-white/30 p-8 text-center">
+        <h2 className="text-xl font-semibold text-[#0D0D0D]">
           Looking for answers?
         </h2>
-        <p className="mt-2 text-[#2C3628]/60">
+        <p className="mt-2 text-[#0D0D0D]/60">
           Check our FAQ for commonly asked questions.
         </p>
         <Link
           href="/learn/faq"
-          className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[#B85C38] hover:text-[#9A4A2B]"
+          className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[#2E7D32] hover:text-[#1B5E20]"
         >
           View FAQ
           <svg

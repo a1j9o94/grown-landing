@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 function CheckIcon() {
   return (
     <svg
-      className="h-4 w-4 text-[#B85C38]"
+      className="h-4 w-4 text-[#2E7D32]"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -30,17 +30,17 @@ export default function THCSaltPage() {
   return (
     <div className="py-12 md:py-20">
       {/* Breadcrumb */}
-      <nav className="mb-8 text-sm text-[#2C3628]/60">
-        <Link href="/products" className="hover:text-[#2C3628]">
+      <nav className="mb-8 text-sm text-[#0D0D0D]/60">
+        <Link href="/products" className="hover:text-[#0D0D0D]">
           Products
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#2C3628]">THC Salt</span>
+        <span className="text-[#0D0D0D]">THC Salt</span>
       </nav>
 
       <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
         {/* Product Image */}
-        <div className="relative aspect-square overflow-hidden rounded-[32px] bg-[#E6DBC6]">
+        <div className="relative aspect-square overflow-hidden rounded-[32px] bg-[#FBE7D3]">
           <Image
             src="/salt_image.png"
             alt="Grown Finishing Salt"
@@ -52,10 +52,10 @@ export default function THCSaltPage() {
 
         {/* Product Info */}
         <div className="lg:py-8">
-          <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">
+          <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
             Flake Salt
           </h1>
-          <p className="mt-4 text-lg text-[#2C3628]/70">
+          <p className="mt-4 text-lg text-[#0D0D0D]/70">
             The perfect finishing pinch. Our harvested grey sea salt delivers
             fast-acting absorption and beautiful texture on any finished dish.
           </p>
@@ -63,22 +63,22 @@ export default function THCSaltPage() {
           {/* Specs */}
           <div className="mt-8 grid grid-cols-3 gap-4 rounded-2xl bg-white/50 p-6">
             <div className="text-center">
-              <div className="serif text-2xl font-semibold text-[#2C3628]">
+              <div className="serif text-2xl font-semibold text-[#0D0D0D]">
                 2mg
               </div>
-              <div className="mt-1 text-xs text-[#2C3628]/60">THC per pinch</div>
+              <div className="mt-1 text-xs text-[#0D0D0D]/60">THC per pinch</div>
             </div>
-            <div className="text-center border-x border-[#2C3628]/10">
-              <div className="serif text-2xl font-semibold text-[#2C3628]">
+            <div className="text-center border-x border-[#0D0D0D]/10">
+              <div className="serif text-2xl font-semibold text-[#0D0D0D]">
                 3oz
               </div>
-              <div className="mt-1 text-xs text-[#2C3628]/60">Per jar</div>
+              <div className="mt-1 text-xs text-[#0D0D0D]/60">Per jar</div>
             </div>
             <div className="text-center">
-              <div className="serif text-2xl font-semibold text-[#2C3628]">
+              <div className="serif text-2xl font-semibold text-[#0D0D0D]">
                 60+
               </div>
-              <div className="mt-1 text-xs text-[#2C3628]/60">Servings</div>
+              <div className="mt-1 text-xs text-[#0D0D0D]/60">Servings</div>
             </div>
           </div>
 
@@ -87,10 +87,10 @@ export default function THCSaltPage() {
             <li className="flex items-start gap-3">
               <CheckIcon />
               <div>
-                <span className="font-medium text-[#2C3628]">
+                <span className="font-medium text-[#0D0D0D]">
                   Harvested grey sea salt
                 </span>
-                <p className="mt-1 text-sm text-[#2C3628]/60">
+                <p className="mt-1 text-sm text-[#0D0D0D]/60">
                   Premium flake texture that melts on contact
                 </p>
               </div>
@@ -98,10 +98,10 @@ export default function THCSaltPage() {
             <li className="flex items-start gap-3">
               <CheckIcon />
               <div>
-                <span className="font-medium text-[#2C3628]">
+                <span className="font-medium text-[#0D0D0D]">
                   Fast-acting absorption
                 </span>
-                <p className="mt-1 text-sm text-[#2C3628]/60">
+                <p className="mt-1 text-sm text-[#0D0D0D]/60">
                   Sublingual activation for quicker onset
                 </p>
               </div>
@@ -109,8 +109,8 @@ export default function THCSaltPage() {
             <li className="flex items-start gap-3">
               <CheckIcon />
               <div>
-                <span className="font-medium text-[#2C3628]">Micro-dosing friendly</span>
-                <p className="mt-1 text-sm text-[#2C3628]/60">
+                <span className="font-medium text-[#0D0D0D]">Micro-dosing friendly</span>
+                <p className="mt-1 text-sm text-[#0D0D0D]/60">
                   2mg per pinch for precise, gentle experiences
                 </p>
               </div>
@@ -118,10 +118,10 @@ export default function THCSaltPage() {
             <li className="flex items-start gap-3">
               <CheckIcon />
               <div>
-                <span className="font-medium text-[#2C3628]">
+                <span className="font-medium text-[#0D0D0D]">
                   Third-party tested
                 </span>
-                <p className="mt-1 text-sm text-[#2C3628]/60">
+                <p className="mt-1 text-sm text-[#0D0D0D]/60">
                   Every batch verified for potency and purity
                 </p>
               </div>
@@ -132,11 +132,11 @@ export default function THCSaltPage() {
           <div className="mt-10">
             <Link
               href="/#waitlist"
-              className="inline-flex w-full items-center justify-center rounded-xl bg-[#2C3628] px-8 py-4 text-base font-semibold text-[#F2F0E9] shadow-lg shadow-[#2C3628]/20 transition-all hover:scale-[1.01] hover:bg-[#1f261c] active:scale-[0.99] sm:w-auto"
+              className="inline-flex w-full items-center justify-center rounded-xl bg-[#0D0D0D] px-8 py-4 text-base font-semibold text-[#F7F3E8] shadow-lg shadow-[#0D0D0D]/20 transition-all hover:scale-[1.01] hover:bg-[#1f261c] active:scale-[0.99] sm:w-auto"
             >
               Join the Waitlist
             </Link>
-            <p className="mt-4 text-xs text-[#2C3628]/40">
+            <p className="mt-4 text-xs text-[#0D0D0D]/40">
               Currently accepting signups for Illinois launch.
             </p>
           </div>
@@ -145,32 +145,32 @@ export default function THCSaltPage() {
 
       {/* Related Learn Content */}
       <section className="mt-24">
-        <h2 className="serif text-2xl text-[#2C3628]">Learn More</h2>
+        <h2 className="serif text-2xl text-[#0D0D0D]">Learn More</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Link
             href="/learn/using-thc-salt"
-            className="rounded-2xl border border-[#2C3628]/10 bg-white/50 p-6 transition-all hover:border-[#2C3628]/20 hover:shadow-md"
+            className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
-            <h3 className="font-semibold text-[#2C3628]">Using THC Salt</h3>
-            <p className="mt-2 text-sm text-[#2C3628]/60">
+            <h3 className="font-semibold text-[#0D0D0D]">Using THC Salt</h3>
+            <p className="mt-2 text-sm text-[#0D0D0D]/60">
               Master the art of finishing with THC salt.
             </p>
           </Link>
           <Link
             href="/learn/flavor-pairing-for-thc"
-            className="rounded-2xl border border-[#2C3628]/10 bg-white/50 p-6 transition-all hover:border-[#2C3628]/20 hover:shadow-md"
+            className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
-            <h3 className="font-semibold text-[#2C3628]">Flavor Pairing</h3>
-            <p className="mt-2 text-sm text-[#2C3628]/60">
+            <h3 className="font-semibold text-[#0D0D0D]">Flavor Pairing</h3>
+            <p className="mt-2 text-sm text-[#0D0D0D]/60">
               Which dishes pair best with THC finishing salt.
             </p>
           </Link>
           <Link
             href="/learn/storage-shelf-life-thc-oil-salt"
-            className="rounded-2xl border border-[#2C3628]/10 bg-white/50 p-6 transition-all hover:border-[#2C3628]/20 hover:shadow-md"
+            className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
-            <h3 className="font-semibold text-[#2C3628]">Storage & Shelf Life</h3>
-            <p className="mt-2 text-sm text-[#2C3628]/60">
+            <h3 className="font-semibold text-[#0D0D0D]">Storage & Shelf Life</h3>
+            <p className="mt-2 text-sm text-[#0D0D0D]/60">
               How to store your THC salt for maximum freshness.
             </p>
           </Link>

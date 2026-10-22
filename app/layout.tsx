@@ -16,17 +16,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://growncooking.com"),
   title: {
-    default: "Grown | THC-Infused Cooking Oil & Salt",
+    default: "Grown | THC-Infused Seasoning Salt & Chili-Lime",
     template: "%s | Grown",
   },
   description:
-    "Pantry staples for your unwind era. THC-infused cooking oil and finishing salt designed for dinner parties, not dorm rooms. Available in Illinois.",
+    "THC-infused seasoning salt and chili-lime seasoning in single-serve 5mg sachets. Designed for dinner parties, not dorm rooms. Launching in Illinois.",
   keywords: [
-    "THC oil",
-    "THC salt",
+    "THC seasoning salt",
+    "THC chili-lime seasoning",
     "cannabis cooking",
     "edibles",
-    "THC cooking oil",
+    "THC sachets",
     "infused oil",
     "cannabis recipes",
     "Illinois THC",
@@ -55,23 +55,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://growncooking.com",
     siteName: "Grown",
-    title: "Grown | THC-Infused Cooking Oil & Salt",
+    title: "Grown | THC-Infused Seasoning Salt & Chili-Lime",
     description:
-      "Pantry staples for your unwind era. THC-infused cooking oil and finishing salt designed for dinner parties, not dorm rooms.",
+      "THC-infused seasoning salt and chili-lime seasoning in single-serve 5mg sachets. Designed for dinner parties, not dorm rooms.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Grown - THC-Infused Cooking Oil & Salt",
+        alt: "Grown - THC-Infused Seasoning Salt & Chili-Lime",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Grown | THC-Infused Cooking Oil & Salt",
+    title: "Grown | THC-Infused Seasoning Salt & Chili-Lime",
     description:
-      "Pantry staples for your unwind era. THC-infused cooking oil and finishing salt designed for dinner parties, not dorm rooms.",
+      "THC-infused seasoning salt and chili-lime seasoning in single-serve 5mg sachets. Designed for dinner parties, not dorm rooms.",
     images: ["/og-image.jpg"],
   },
   verification: {

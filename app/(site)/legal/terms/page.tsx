@@ -10,25 +10,25 @@ export default function TermsPage() {
   return (
     <div className="py-12 md:py-20">
       {/* Breadcrumb */}
-      <nav className="mb-8 text-sm text-[#2C3628]/60">
-        <Link href="/" className="hover:text-[#2C3628]">
+      <nav className="mb-8 text-sm text-[#0D0D0D]/60">
+        <Link href="/" className="hover:text-[#0D0D0D]">
           Home
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#2C3628]">Terms of Service</span>
+        <span className="text-[#0D0D0D]">Terms of Service</span>
       </nav>
 
       <article className="prose prose-lg mx-auto max-w-3xl">
-        <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">
+        <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
           Terms of Service
         </h1>
-        <p className="mt-4 text-sm text-[#2C3628]/50">
+        <p className="mt-4 text-sm text-[#0D0D0D]/50">
           Last updated: December 2024
         </p>
 
-        <div className="mt-12 space-y-8 text-[#2C3628]/80">
+        <div className="mt-12 space-y-8 text-[#0D0D0D]/80">
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               1. Acceptance of Terms
             </h2>
             <p>
@@ -39,7 +39,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               2. Age Requirement
             </h2>
             <p>
@@ -51,7 +51,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               3. Product Availability
             </h2>
             <p>
@@ -62,7 +62,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">4. Product Use</h2>
+            <h2 className="serif text-2xl text-[#0D0D0D]">4. Product Use</h2>
             <p>
               Our products contain THC, a psychoactive compound. Users should:
             </p>
@@ -76,7 +76,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">5. No Medical Claims</h2>
+            <h2 className="serif text-2xl text-[#0D0D0D]">5. No Medical Claims</h2>
             <p>
               Grown products are not intended to diagnose, treat, cure, or
               prevent any disease. We make no medical claims about our products.
@@ -85,7 +85,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               6. Intellectual Property
             </h2>
             <p>
@@ -96,7 +96,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               7. Limitation of Liability
             </h2>
             <p>
@@ -107,7 +107,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">8. Changes to Terms</h2>
+            <h2 className="serif text-2xl text-[#0D0D0D]">8. Changes to Terms</h2>
             <p>
               We reserve the right to modify these terms at any time. Changes
               will be posted on this page with an updated revision date.
@@ -115,13 +115,13 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">9. Contact</h2>
+            <h2 className="serif text-2xl text-[#0D0D0D]">9. Contact</h2>
             <p>
               If you have questions about these Terms of Service, please contact
               us at{" "}
               <a
                 href="mailto:hello@growncooking.com"
-                className="text-[#B85C38] hover:text-[#9A4A2B]"
+                className="text-[#2E7D32] hover:text-[#1B5E20]"
               >
                 hello@growncooking.com
               </a>

@@ -11,25 +11,25 @@ export default function PrivacyPage() {
   return (
     <div className="py-12 md:py-20">
       {/* Breadcrumb */}
-      <nav className="mb-8 text-sm text-[#2C3628]/60">
-        <Link href="/" className="hover:text-[#2C3628]">
+      <nav className="mb-8 text-sm text-[#0D0D0D]/60">
+        <Link href="/" className="hover:text-[#0D0D0D]">
           Home
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#2C3628]">Privacy Policy</span>
+        <span className="text-[#0D0D0D]">Privacy Policy</span>
       </nav>
 
       <article className="prose prose-lg mx-auto max-w-3xl">
-        <h1 className="serif text-4xl text-[#2C3628] md:text-5xl">
+        <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
           Privacy Policy
         </h1>
-        <p className="mt-4 text-sm text-[#2C3628]/50">
+        <p className="mt-4 text-sm text-[#0D0D0D]/50">
           Last updated: December 2024
         </p>
 
-        <div className="mt-12 space-y-8 text-[#2C3628]/80">
+        <div className="mt-12 space-y-8 text-[#0D0D0D]/80">
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               1. Information We Collect
             </h2>
             <p>We collect information you provide directly to us, including:</p>
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               2. How We Use Your Information
             </h2>
             <p>We use the information we collect to:</p>
@@ -59,7 +59,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               3. Information Sharing
             </h2>
             <p>
@@ -78,7 +78,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">4. Data Security</h2>
+            <h2 className="serif text-2xl text-[#0D0D0D]">4. Data Security</h2>
             <p>
               We implement appropriate technical and organizational measures to
               protect your personal information against unauthorized access,
@@ -87,7 +87,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">5. Cookies</h2>
+            <h2 className="serif text-2xl text-[#0D0D0D]">5. Cookies</h2>
             <p>
               We use cookies and similar technologies to enhance your experience
               on our website. These include:
@@ -104,7 +104,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">6. Your Rights</h2>
+            <h2 className="serif text-2xl text-[#0D0D0D]">6. Your Rights</h2>
             <p>You have the right to:</p>
             <ul className="mt-4 list-disc space-y-2 pl-6">
               <li>Access the personal information we hold about you</li>
@@ -116,7 +116,7 @@ export default function PrivacyPage() {
               To exercise these rights, contact us at{" "}
               <a
                 href="mailto:hello@growncooking.com"
-                className="text-[#B85C38] hover:text-[#9A4A2B]"
+                className="text-[#2E7D32] hover:text-[#1B5E20]"
               >
                 hello@growncooking.com
               </a>
@@ -125,7 +125,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               7. Third-Party Links
             </h2>
             <p>
@@ -135,7 +135,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">
+            <h2 className="serif text-2xl text-[#0D0D0D]">
               8. Changes to This Policy
             </h2>
             <p>
@@ -145,13 +145,13 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="serif text-2xl text-[#2C3628]">9. Contact Us</h2>
+            <h2 className="serif text-2xl text-[#0D0D0D]">9. Contact Us</h2>
             <p>
               If you have questions about this Privacy Policy, please contact us
               at{" "}
               <a
                 href="mailto:hello@growncooking.com"
-                className="text-[#B85C38] hover:text-[#9A4A2B]"
+                className="text-[#2E7D32] hover:text-[#1B5E20]"
               >
                 hello@growncooking.com
               </a>

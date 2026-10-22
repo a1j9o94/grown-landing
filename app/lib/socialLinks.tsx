@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 type IconProps = { className?: string };
 
-const iconClasses = "h-4 w-4 text-[#2C3628]";
+const iconClasses = "h-4 w-4 text-[#0D0D0D]";
 
 export type SocialLink = {
   name: string;
