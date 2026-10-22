@@ -53,12 +53,16 @@ export default function ResponsibleUsePage() {
             <h2 className="serif text-2xl text-[#0D0D0D]">Know Your Dose</h2>
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl border border-[#0D0D0D]/10 p-4">
-                <h3 className="font-semibold text-[#0D0D0D]">Grown Oil</h3>
-                <p className="mt-2 text-sm">5mg THC per teaspoon</p>
+                <h3 className="font-semibold text-[#0D0D0D]">
+                  Grown Seasoning Salt
+                </h3>
+                <p className="mt-2 text-sm">5mg THC per sachet</p>
               </div>
               <div className="rounded-xl border border-[#0D0D0D]/10 p-4">
-                <h3 className="font-semibold text-[#0D0D0D]">Grown Salt</h3>
-                <p className="mt-2 text-sm">2mg THC per pinch</p>
+                <h3 className="font-semibold text-[#0D0D0D]">
+                  Grown Chili-Lime Seasoning
+                </h3>
+                <p className="mt-2 text-sm">5mg THC per sachet</p>
               </div>
             </div>
             <p className="mt-4">

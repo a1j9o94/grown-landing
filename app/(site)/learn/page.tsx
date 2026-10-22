@@ -6,7 +6,7 @@ import { getLearnPostsByCategory } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Learn | Grown",
   description:
-    "Guides and resources for cooking with THC oil and salt. From timing basics to flavor pairing, master the art of elevated cooking.",
+    "Guides and resources for cooking with THC seasoning. From timing basics to flavor pairing, master the art of elevated hosting.",
 };
 
 export default function LearnPage() {

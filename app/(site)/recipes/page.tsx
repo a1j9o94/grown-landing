@@ -118,7 +118,7 @@ export default function RecipesPage() {
           <h2 className="serif text-2xl text-[#0D0D0D]">Recipes Coming Soon</h2>
           <p className="mx-auto mt-4 max-w-md text-[#0D0D0D]/60">
             We&apos;re crafting a collection of chef-tested recipes perfect for
-            cooking with THC oil and salt. Join the waitlist to be notified when
+            cooking with THC seasonings. Join the waitlist to be notified when
             they launch.
           </p>
           <Link
@@ -137,14 +137,14 @@ export default function RecipesPage() {
         </h2>
         <div className="grid gap-4 md:grid-cols-2">
           <Link
-            href="/learn/cooking-with-thc-oil"
+            href="/learn/cooking-with-thc-seasoning"
             className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
             <h3 className="font-semibold text-[#0D0D0D]">
-              Cooking with THC Oil
+              Cooking with THC Seasoning
             </h3>
             <p className="mt-2 text-sm text-[#0D0D0D]/60">
-              A complete guide to incorporating THC oil into your cooking.
+              A complete guide to cooking with THC seasoning sachets.
             </p>
           </Link>
           <Link

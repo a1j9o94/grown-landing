@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "THC Heirloom Oil | Grown",
+  title: "THC Seasoning Salt | Grown",
   description:
-    "Cold-pressed olive blend infused with 5mg THC per teaspoon. Perfect for sautéing, roasting, and drizzling. Zero weedy aftertaste.",
+    "A savory, herby seasoning salt in single-serve sachets. 5mg THC per sachet, sold in 5-packs. No measuring, no guesswork.",
 };
 
 function CheckIcon() {
@@ -26,7 +26,7 @@ function CheckIcon() {
   );
 }
 
-export default function THCOilPage() {
+export default function SeasoningSaltPage() {
   return (
     <div className="py-12 md:py-20">
       {/* Breadcrumb */}
@@ -35,15 +35,15 @@ export default function THCOilPage() {
           Products
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#0D0D0D]">THC Oil</span>
+        <span className="text-[#0D0D0D]">Seasoning Salt</span>
       </nav>
 
       <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
         {/* Product Image */}
         <div className="relative aspect-square overflow-hidden rounded-[32px] bg-[#E8F5E9]">
           <Image
-            src="/oil_image.png"
-            alt="Grown Heirloom Oil"
+            src="/brand/box-seasoning-salt.webp"
+            alt="Grown THC Seasoning Salt 5-pack box"
             fill
             className="object-cover"
             priority
@@ -53,12 +53,12 @@ export default function THCOilPage() {
         {/* Product Info */}
         <div className="lg:py-8">
           <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
-            Heirloom Oil
+            Seasoning Salt
           </h1>
           <p className="mt-4 text-lg text-[#0D0D0D]/70">
-            For sautéing, roasting, and drizzling. Our signature cold-pressed
-            olive blend delivers consistent dosing with zero &ldquo;weedy&rdquo;
-            aftertaste.
+            The everyday finisher. A savory, herby blend that lands on
+            everything from eggs to roasted vegetables - dosed to the sachet,
+            so the math is always done for you.
           </p>
 
           {/* Specs */}
@@ -67,19 +67,25 @@ export default function THCOilPage() {
               <div className="serif text-2xl font-semibold text-[#0D0D0D]">
                 5mg
               </div>
-              <div className="mt-1 text-xs text-[#0D0D0D]/60">THC per tsp</div>
+              <div className="mt-1 text-xs text-[#0D0D0D]/60">
+                THC per sachet
+              </div>
             </div>
             <div className="text-center border-x border-[#0D0D0D]/10">
               <div className="serif text-2xl font-semibold text-[#0D0D0D]">
-                8oz
+                5
               </div>
-              <div className="mt-1 text-xs text-[#0D0D0D]/60">Per bottle</div>
+              <div className="mt-1 text-xs text-[#0D0D0D]/60">
+                Sachets per box
+              </div>
             </div>
             <div className="text-center">
               <div className="serif text-2xl font-semibold text-[#0D0D0D]">
-                48
+                1
               </div>
-              <div className="mt-1 text-xs text-[#0D0D0D]/60">Servings</div>
+              <div className="mt-1 text-xs text-[#0D0D0D]/60">
+                Serving, every time
+              </div>
             </div>
           </div>
 
@@ -89,10 +95,10 @@ export default function THCOilPage() {
               <CheckIcon />
               <div>
                 <span className="font-medium text-[#0D0D0D]">
-                  Cold-pressed olive blend
+                  Single-serve sachets
                 </span>
                 <p className="mt-1 text-sm text-[#0D0D0D]/60">
-                  Premium quality oils that complement any dish
+                  Tear, sprinkle, done. No measuring spoons, no guesswork
                 </p>
               </div>
             </li>
@@ -100,10 +106,10 @@ export default function THCOilPage() {
               <CheckIcon />
               <div>
                 <span className="font-medium text-[#0D0D0D]">
-                  Precise dosing
+                  Precise 5mg dosing
                 </span>
                 <p className="mt-1 text-sm text-[#0D0D0D]/60">
-                  Reliable 5mg THC per teaspoon for predictable experiences
+                  Every sachet delivers the same experience, plate after plate
                 </p>
               </div>
             </li>
@@ -111,10 +117,11 @@ export default function THCOilPage() {
               <CheckIcon />
               <div>
                 <span className="font-medium text-[#0D0D0D]">
-                  Neutral taste profile
+                  Made for finishing
                 </span>
                 <p className="mt-1 text-sm text-[#0D0D0D]/60">
-                  Designed to enhance food, not overpower it
+                  Sprinkle on at the table so every guest controls their own
+                  serving
                 </p>
               </div>
             </li>
@@ -151,34 +158,34 @@ export default function THCOilPage() {
         <h2 className="serif text-2xl text-[#0D0D0D]">Learn More</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Link
-            href="/learn/cooking-with-thc-oil"
+            href="/learn/using-thc-salt"
             className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
             <h3 className="font-semibold text-[#0D0D0D]">
-              Cooking with THC Oil
+              Using THC Seasoning Salt
             </h3>
             <p className="mt-2 text-sm text-[#0D0D0D]/60">
-              A complete guide to incorporating THC oil into your cooking.
+              Master the art of finishing with seasoning salt.
             </p>
           </Link>
           <Link
-            href="/learn/when-to-add-thc-oil"
+            href="/learn/flavor-pairing-for-thc"
+            className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
+          >
+            <h3 className="font-semibold text-[#0D0D0D]">Flavor Pairing</h3>
+            <p className="mt-2 text-sm text-[#0D0D0D]/60">
+              Which dishes pair best with each blend.
+            </p>
+          </Link>
+          <Link
+            href="/learn/storage-and-shelf-life"
             className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
             <h3 className="font-semibold text-[#0D0D0D]">
-              When to Add THC Oil
+              Storage & Shelf Life
             </h3>
             <p className="mt-2 text-sm text-[#0D0D0D]/60">
-              Timing matters. Learn when to add oil for best results.
-            </p>
-          </Link>
-          <Link
-            href="/learn/storage-shelf-life-thc-oil-salt"
-            className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
-          >
-            <h3 className="font-semibold text-[#0D0D0D]">Storage & Shelf Life</h3>
-            <p className="mt-2 text-sm text-[#0D0D0D]/60">
-              How to store your THC oil for maximum freshness.
+              How to store your sachets for maximum freshness.
             </p>
           </Link>
         </div>

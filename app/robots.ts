@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin/", "/api/"],
       },
     ],
-    sitemap: "https://growncooking.com/sitemap.xml",
+    sitemap: "https://grownthc.com/sitemap.xml",
   };
 }

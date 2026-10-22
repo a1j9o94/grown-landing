@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://growncooking.com"),
+  metadataBase: new URL("https://grownthc.com"),
   title: {
     default: "Grown | THC-Infused Seasoning Salt & Chili-Lime",
     template: "%s | Grown",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://growncooking.com",
+    url: "https://grownthc.com",
     siteName: "Grown",
     title: "Grown | THC-Infused Seasoning Salt & Chili-Lime",
     description:

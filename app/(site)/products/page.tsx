@@ -83,12 +83,20 @@ export default function ProductsPage() {
                 <span>Sold in 5-packs</span>
               </li>
             </ul>
-            <Link
-              href="/#waitlist"
-              className="mt-8 inline-flex items-center justify-center rounded-full bg-[#2e7d32] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#1b5e20]"
-            >
-              Join the list for launch
-            </Link>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href="/#waitlist"
+                className="inline-flex items-center justify-center rounded-full bg-[#2e7d32] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#1b5e20]"
+              >
+                Join the list for launch
+              </Link>
+              <Link
+                href="/products/seasoning-salt"
+                className="text-sm font-medium text-[#2e7d32] transition-colors hover:text-[#1b5e20]"
+              >
+                Product details
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -137,12 +145,20 @@ export default function ProductsPage() {
                 <span>Sold in 5-packs</span>
               </li>
             </ul>
-            <Link
-              href="/#waitlist"
-              className="mt-8 inline-flex items-center justify-center rounded-full bg-[#e65c00] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#c24e00]"
-            >
-              Join the list for launch
-            </Link>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href="/#waitlist"
+                className="inline-flex items-center justify-center rounded-full bg-[#e65c00] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#c24e00]"
+              >
+                Join the list for launch
+              </Link>
+              <Link
+                href="/products/chili-lime-seasoning"
+                className="text-sm font-medium text-[#e65c00] transition-colors hover:text-[#c24e00]"
+              >
+                Product details
+              </Link>
+            </div>
           </div>
         </div>
       </section>

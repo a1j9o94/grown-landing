@@ -115,10 +115,10 @@ export default function PrivacyPage() {
             <p className="mt-4">
               To exercise these rights, contact us at{" "}
               <a
-                href="mailto:hello@growncooking.com"
+                href="mailto:hello@grownthc.com"
                 className="text-[#2E7D32] hover:text-[#1B5E20]"
               >
-                hello@growncooking.com
+                hello@grownthc.com
               </a>
               .
             </p>
@@ -150,10 +150,10 @@ export default function PrivacyPage() {
               If you have questions about this Privacy Policy, please contact us
               at{" "}
               <a
-                href="mailto:hello@growncooking.com"
+                href="mailto:hello@grownthc.com"
                 className="text-[#2E7D32] hover:text-[#1B5E20]"
               >
-                hello@growncooking.com
+                hello@grownthc.com
               </a>
               .
             </p>

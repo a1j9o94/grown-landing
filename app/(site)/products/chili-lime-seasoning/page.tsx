@@ -3,15 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "THC Finishing Salt | Grown",
+  title: "THC Chili-Lime Seasoning | Grown",
   description:
-    "Harvested grey sea salt with 2mg THC per pinch. Fast-acting absorption for the perfect finishing touch.",
+    "Heat, citrus, and a little mischief in single-serve sachets. 5mg THC per sachet, sold in 5-packs. Made for rims, elote, fruit, and the grill.",
 };
 
 function CheckIcon() {
   return (
     <svg
-      className="h-4 w-4 text-[#2E7D32]"
+      className="h-4 w-4 text-[#E65C00]"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -26,7 +26,7 @@ function CheckIcon() {
   );
 }
 
-export default function THCSaltPage() {
+export default function ChiliLimeSeasoningPage() {
   return (
     <div className="py-12 md:py-20">
       {/* Breadcrumb */}
@@ -35,15 +35,15 @@ export default function THCSaltPage() {
           Products
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#0D0D0D]">THC Salt</span>
+        <span className="text-[#0D0D0D]">Chili-Lime Seasoning</span>
       </nav>
 
       <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
         {/* Product Image */}
         <div className="relative aspect-square overflow-hidden rounded-[32px] bg-[#FBE7D3]">
           <Image
-            src="/salt_image.png"
-            alt="Grown Finishing Salt"
+            src="/brand/box-chili-lime.webp"
+            alt="Grown THC Chili-Lime Seasoning 5-pack box"
             fill
             className="object-cover"
             priority
@@ -53,32 +53,39 @@ export default function THCSaltPage() {
         {/* Product Info */}
         <div className="lg:py-8">
           <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
-            Flake Salt
+            Chili-Lime Seasoning
           </h1>
           <p className="mt-4 text-lg text-[#0D0D0D]/70">
-            The perfect finishing pinch. Our harvested grey sea salt delivers
-            fast-acting absorption and beautiful texture on any finished dish.
+            Heat, citrus, and a little mischief. Made for rims, elote, fruit,
+            and everything off the grill - the sachet you pass around the
+            table.
           </p>
 
           {/* Specs */}
           <div className="mt-8 grid grid-cols-3 gap-4 rounded-2xl bg-white/50 p-6">
             <div className="text-center">
               <div className="serif text-2xl font-semibold text-[#0D0D0D]">
-                2mg
+                5mg
               </div>
-              <div className="mt-1 text-xs text-[#0D0D0D]/60">THC per pinch</div>
+              <div className="mt-1 text-xs text-[#0D0D0D]/60">
+                THC per sachet
+              </div>
             </div>
             <div className="text-center border-x border-[#0D0D0D]/10">
               <div className="serif text-2xl font-semibold text-[#0D0D0D]">
-                3oz
+                5
               </div>
-              <div className="mt-1 text-xs text-[#0D0D0D]/60">Per jar</div>
+              <div className="mt-1 text-xs text-[#0D0D0D]/60">
+                Sachets per box
+              </div>
             </div>
             <div className="text-center">
               <div className="serif text-2xl font-semibold text-[#0D0D0D]">
-                60+
+                1
               </div>
-              <div className="mt-1 text-xs text-[#0D0D0D]/60">Servings</div>
+              <div className="mt-1 text-xs text-[#0D0D0D]/60">
+                Serving, every time
+              </div>
             </div>
           </div>
 
@@ -88,10 +95,10 @@ export default function THCSaltPage() {
               <CheckIcon />
               <div>
                 <span className="font-medium text-[#0D0D0D]">
-                  Harvested grey sea salt
+                  Single-serve sachets
                 </span>
                 <p className="mt-1 text-sm text-[#0D0D0D]/60">
-                  Premium flake texture that melts on contact
+                  Tear, sprinkle, done. No measuring spoons, no guesswork
                 </p>
               </div>
             </li>
@@ -99,19 +106,22 @@ export default function THCSaltPage() {
               <CheckIcon />
               <div>
                 <span className="font-medium text-[#0D0D0D]">
-                  Fast-acting absorption
+                  Precise 5mg dosing
                 </span>
                 <p className="mt-1 text-sm text-[#0D0D0D]/60">
-                  Sublingual activation for quicker onset
+                  Every sachet delivers the same experience, plate after plate
                 </p>
               </div>
             </li>
             <li className="flex items-start gap-3">
               <CheckIcon />
               <div>
-                <span className="font-medium text-[#0D0D0D]">Micro-dosing friendly</span>
+                <span className="font-medium text-[#0D0D0D]">
+                  Built for the table
+                </span>
                 <p className="mt-1 text-sm text-[#0D0D0D]/60">
-                  2mg per pinch for precise, gentle experiences
+                  Rim a glass, finish the elote, wake up the fruit plate -
+                  guests dose their own
                 </p>
               </div>
             </li>
@@ -148,12 +158,14 @@ export default function THCSaltPage() {
         <h2 className="serif text-2xl text-[#0D0D0D]">Learn More</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Link
-            href="/learn/using-thc-salt"
+            href="/learn/cooking-with-thc-seasoning"
             className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
-            <h3 className="font-semibold text-[#0D0D0D]">Using THC Salt</h3>
+            <h3 className="font-semibold text-[#0D0D0D]">
+              Cooking with THC Seasoning
+            </h3>
             <p className="mt-2 text-sm text-[#0D0D0D]/60">
-              Master the art of finishing with THC salt.
+              Dosing math and technique for the sachet format.
             </p>
           </Link>
           <Link
@@ -162,16 +174,18 @@ export default function THCSaltPage() {
           >
             <h3 className="font-semibold text-[#0D0D0D]">Flavor Pairing</h3>
             <p className="mt-2 text-sm text-[#0D0D0D]/60">
-              Which dishes pair best with THC finishing salt.
+              Which dishes pair best with each blend.
             </p>
           </Link>
           <Link
-            href="/learn/storage-shelf-life-thc-oil-salt"
+            href="/learn/edibles-timing-basics"
             className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
-            <h3 className="font-semibold text-[#0D0D0D]">Storage & Shelf Life</h3>
+            <h3 className="font-semibold text-[#0D0D0D]">
+              Edibles Timing Basics
+            </h3>
             <p className="mt-2 text-sm text-[#0D0D0D]/60">
-              How to store your THC salt for maximum freshness.
+              Onset, peak, and duration for planning the evening.
             </p>
           </Link>
         </div>

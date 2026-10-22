@@ -64,7 +64,7 @@ export default function AboutPage() {
                 Reliable Dosing
               </h3>
               <p className="mt-3 text-[#0D0D0D]/70">
-                No guesswork. Every teaspoon, every pinch delivers the same
+                No guesswork. Every sachet delivers the same 5mg, the same
                 experience. Because hosting a dinner party is stressful enough
                 without wondering if you overdid it.
               </p>

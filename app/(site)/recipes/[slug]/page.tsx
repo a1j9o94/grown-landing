@@ -62,11 +62,11 @@ export default async function RecipePage({
   const { frontmatter, content } = recipe;
 
   // Generate schema data
-  const recipeUrl = `https://growncooking.com/recipes/${slug}`;
+  const recipeUrl = `https://grownthc.com/recipes/${slug}`;
   const recipeSchema = generateRecipeSchema(frontmatter, recipeUrl);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://growncooking.com" },
-    { name: "Recipes", url: "https://growncooking.com/recipes" },
+    { name: "Home", url: "https://grownthc.com" },
+    { name: "Recipes", url: "https://grownthc.com/recipes" },
     { name: frontmatter.title, url: recipeUrl },
   ]);
 
@@ -209,16 +209,20 @@ export default async function RecipePage({
                   THC Option
                 </h2>
                 <div className="mt-4 space-y-4 text-[#0D0D0D]/80">
-                  {frontmatter.thcOption.oil && (
+                  {frontmatter.thcOption.seasoningSalt && (
                     <p>
-                      <strong className="text-[#0D0D0D]">Add THC Oil:</strong>{" "}
-                      {frontmatter.thcOption.oil}
+                      <strong className="text-[#0D0D0D]">
+                        Add Seasoning Salt:
+                      </strong>{" "}
+                      {frontmatter.thcOption.seasoningSalt}
                     </p>
                   )}
-                  {frontmatter.thcOption.salt && (
+                  {frontmatter.thcOption.chiliLime && (
                     <p>
-                      <strong className="text-[#0D0D0D]">Add THC Salt:</strong>{" "}
-                      {frontmatter.thcOption.salt}
+                      <strong className="text-[#0D0D0D]">
+                        Add Chili-Lime:
+                      </strong>{" "}
+                      {frontmatter.thcOption.chiliLime}
                     </p>
                   )}
                 </div>
@@ -318,10 +322,10 @@ export default async function RecipePage({
               {/* Learn More */}
               <div className="rounded-2xl bg-[#0D0D0D] p-6 text-center">
                 <p className="text-sm text-[#F7F3E8]/80">
-                  New to cooking with THC?
+                  New to cooking with THC seasoning?
                 </p>
                 <Link
-                  href="/learn/cooking-with-thc-oil"
+                  href="/learn/cooking-with-thc-seasoning"
                   className="mt-4 inline-flex items-center gap-2 rounded-full bg-[#F7F3E8] px-4 py-2 text-sm font-medium text-[#0D0D0D] transition-all hover:bg-white"
                 >
                   Read the Guide

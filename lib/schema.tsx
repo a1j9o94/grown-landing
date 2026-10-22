@@ -10,11 +10,11 @@ export function generateRecipeSchema(
     "@type": "Recipe",
     name: recipe.title,
     description: recipe.description,
-    image: recipe.image ? `https://growncooking.com${recipe.image}` : undefined,
+    image: recipe.image ? `https://grownthc.com${recipe.image}` : undefined,
     author: {
       "@type": "Organization",
       name: "Grown",
-      url: "https://growncooking.com",
+      url: "https://grownthc.com",
     },
     datePublished: recipe.date,
     prepTime: recipe.prepTime,
@@ -85,15 +85,15 @@ export function generateArticleSchema(
     author: {
       "@type": "Organization",
       name: "Grown",
-      url: "https://growncooking.com",
+      url: "https://grownthc.com",
     },
     publisher: {
       "@type": "Organization",
       name: "Grown",
-      url: "https://growncooking.com",
+      url: "https://grownthc.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://growncooking.com/logo.png",
+        url: "https://grownthc.com/logo.png",
       },
     },
     datePublished: article.date,
@@ -109,8 +109,8 @@ export function generateOrganizationSchema(): object {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Grown",
-    url: "https://growncooking.com",
-    logo: "https://growncooking.com/logo.png",
+    url: "https://grownthc.com",
+    logo: "https://grownthc.com/logo.png",
     description:
       "THC-infused pantry staples for adults who take their cooking seriously.",
     address: {
@@ -128,7 +128,7 @@ export function generateWebsiteSchema(): object {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Grown",
-    url: "https://growncooking.com",
+    url: "https://grownthc.com",
     description:
       "THC-infused pantry staples for adults who take their cooking seriously.",
     publisher: {

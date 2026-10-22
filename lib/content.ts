@@ -37,8 +37,8 @@ export interface RecipeFrontmatter {
   ingredients: string[];
   instructions: string[];
   thcOption?: {
-    oil?: string;
-    salt?: string;
+    seasoningSalt?: string;
+    chiliLime?: string;
   };
   storage?: string;
   tips?: string[];
