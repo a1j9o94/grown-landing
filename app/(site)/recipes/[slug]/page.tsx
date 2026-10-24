@@ -124,6 +124,10 @@ export default async function RecipePage({
             {frontmatter.description}
           </p>
 
+          <p className="mt-6 rounded-lg border border-[#E65C00]/30 bg-[#E65C00]/10 px-4 py-3 text-sm text-[#0D0D0D]/80">
+            Draft recipe, not yet kitchen-tested. Times and quantities may change. Use a food thermometer and follow safe internal temperatures. THC product formulation and dosing guidance are still in development; follow the label.
+          </p>
+
           {/* Time Info */}
           <div className="mt-8 flex flex-wrap gap-6">
             <div>
