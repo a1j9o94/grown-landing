@@ -124,10 +124,10 @@ const mdxComponents = {
   },
   // THC Option callout for recipes
   THCOption: ({
-    seasoningSalt,
+    seafoodSeasoning,
     chiliLime,
   }: {
-    seasoningSalt?: string;
+    seafoodSeasoning?: string;
     chiliLime?: string;
   }) => (
     <div className="mt-8 rounded-2xl border-2 border-[#B85C38]/20 bg-[#B85C38]/5 p-6">
@@ -148,10 +148,10 @@ const mdxComponents = {
         THC Option
       </h4>
       <div className="mt-4 space-y-3 text-[#2C3628]/80">
-        {seasoningSalt && (
+        {seafoodSeasoning && (
           <p>
-            <strong className="text-[#2C3628]">Add Seasoning Salt:</strong>{" "}
-            {seasoningSalt}
+            <strong className="text-[#2C3628]">Add Seafood Seasoning:</strong>{" "}
+            {seafoodSeasoning}
           </p>
         )}
         {chiliLime && (

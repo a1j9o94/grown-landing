@@ -209,12 +209,12 @@ export default async function RecipePage({
                   THC Option
                 </h2>
                 <div className="mt-4 space-y-4 text-[#0D0D0D]/80">
-                  {frontmatter.thcOption.seasoningSalt && (
+                  {frontmatter.thcOption.seafoodSeasoning && (
                     <p>
                       <strong className="text-[#0D0D0D]">
-                        Add Seasoning Salt:
+                        Add Seafood Seasoning:
                       </strong>{" "}
-                      {frontmatter.thcOption.seasoningSalt}
+                      {frontmatter.thcOption.seafoodSeasoning}
                     </p>
                   )}
                   {frontmatter.thcOption.chiliLime && (

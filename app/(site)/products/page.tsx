@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Products | Grown",
   description:
-    "THC-infused seasoning salt and chili-lime seasoning in single-serve 5mg sachets. Pantry staples for dinner parties, not dorm rooms.",
+    "THC-infused seafood seasoning and chili-lime seasoning in single-serve 5mg sachets. Pantry staples for dinner parties, not dorm rooms.",
 };
 
 function CheckIcon({ color = "#2e7d32" }: { color?: string }) {
@@ -41,58 +41,58 @@ export default function ProductsPage() {
         </p>
       </div>
 
-      {/* SKU 01: Seasoning Salt */}
+      {/* SKU 01: Seafood Seasoning */}
       <section
-        id="seasoning-salt"
-        className="mb-12 overflow-hidden rounded-[32px] bg-[#e8f5e9]"
+        id="seafood-seasoning"
+        className="mb-12 overflow-hidden rounded-[32px] bg-[#E1EEF4]"
       >
         <div className="grid items-center gap-8 p-8 md:grid-cols-2 md:p-12">
           <div className="relative aspect-[2/3] w-full max-w-sm overflow-hidden rounded-[24px] shadow-xl shadow-[#0d0d0d]/10 max-md:mx-auto">
             <Image
-              src="/brand/sachet-seasoning-salt.webp"
-              alt="Grown THC Infused Seasoning Salt - single-serve sachet"
+              src="/brand/sachet-seafood.webp"
+              alt="Grown THC Infused Seafood Seasoning - single-serve sachet"
               fill
               className="object-cover"
             />
           </div>
           <div>
-            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#2e7d32]">
+            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#1F5A7A]">
               SKU 01 • Launch
             </div>
             <h2 className="serif mt-2 text-4xl text-[#0d0d0d]">
-              Seasoning Salt
+              Seafood Seasoning
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[#0d0d0d]/70">
-              The everyday finisher. A savory, herby blend that lands on
-              everything from eggs to roasted vegetables - dosed to the pinch,
-              so the math is always done for you.
+              A working name for a bay-style blend of celery, paprika and
+              pepper. Made for shrimp, crab, fish and fries - dosed to the
+              sachet, so the math is always done for you.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-[#0d0d0d]/80">
               <li className="flex items-center gap-3">
-                <CheckIcon color="#2e7d32" />
+                <CheckIcon color="#1F5A7A" />
                 <span>
                   <span className="font-medium">5mg THC</span> per sachet
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon color="#2e7d32" />
+                <CheckIcon color="#1F5A7A" />
                 <span>Single-serve - no measuring, no guesswork</span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon color="#2e7d32" />
+                <CheckIcon color="#1F5A7A" />
                 <span>Sold in 5-packs</span>
               </li>
             </ul>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
                 href="/#waitlist"
-                className="inline-flex items-center justify-center rounded-full bg-[#2e7d32] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#1b5e20]"
+                className="inline-flex items-center justify-center rounded-full bg-[#1F5A7A] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#174559]"
               >
                 Join the list for launch
               </Link>
               <Link
-                href="/products/seasoning-salt"
-                className="text-sm font-medium text-[#2e7d32] transition-colors hover:text-[#1b5e20]"
+                href="/products/seafood-seasoning"
+                className="text-sm font-medium text-[#1F5A7A] transition-colors hover:text-[#174559]"
               >
                 Product details
               </Link>

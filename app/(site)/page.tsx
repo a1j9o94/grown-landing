@@ -6,7 +6,7 @@ import Link from "next/link";
 import { socialLinks } from "../lib/socialLinks";
 
 // --- Types & Utilities ---
-type Interest = "seasoning-salt" | "chili-lime";
+type Interest = "seafood-seasoning" | "chili-lime";
 
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim().toLowerCase());
@@ -15,7 +15,7 @@ function isValidEmail(email: string) {
 export default function HomePage() {
   const [email, setEmail] = useState("");
   const [interests, setInterests] = useState<Set<Interest>>(
-    new Set(["seasoning-salt", "chili-lime"])
+    new Set(["seafood-seasoning", "chili-lime"])
   );
   const [zip, setZip] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -55,7 +55,7 @@ export default function HomePage() {
       setStatus("success");
       setEmail("");
       setZip("");
-      setInterests(new Set(["seasoning-salt", "chili-lime"]));
+      setInterests(new Set(["seafood-seasoning", "chili-lime"]));
     } catch (err: unknown) {
       console.error(err);
       setStatus("error");
@@ -94,7 +94,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-8 text-lg leading-relaxed text-[#0d0d0d]/80">
-              THC-infused seasoning salt and chili-lime seasoning in
+              THC-infused seafood seasoning and chili-lime seasoning in
               single-serve sachets. 5mg each, designed for dinner parties, not
               dorm rooms.
             </p>
@@ -117,11 +117,11 @@ export default function HomePage() {
 
           {/* Right: Visual - Two Sachet Images */}
           <div className="relative grid grid-cols-2 gap-4 lg:gap-6">
-            {/* Seasoning Salt Sachet */}
+            {/* Seafood Seasoning Sachet */}
             <div className="relative aspect-[2/3] overflow-hidden rounded-[24px] shadow-2xl shadow-[#0d0d0d]/10">
               <Image
-                src="/brand/sachet-seasoning-salt.webp"
-                alt="Grown THC Infused Seasoning Salt - single-serve sachet"
+                src="/brand/sachet-seafood.webp"
+                alt="Grown THC Infused Seafood Seasoning - single-serve sachet"
                 fill
                 className="object-cover"
                 priority
@@ -145,40 +145,40 @@ export default function HomePage() {
 
       {/* Product Showcase (The Lineup) */}
       <section id="products" className="grid gap-8 md:grid-cols-2">
-        {/* Seasoning Salt Card */}
+        {/* Seafood Seasoning Card */}
         <Link
-          href="/products#seasoning-salt"
-          className="group relative overflow-hidden rounded-[32px] bg-[#e8f5e9] transition-all hover:shadow-xl hover:shadow-[#2e7d32]/10"
+          href="/products#seafood-seasoning"
+          className="group relative overflow-hidden rounded-[32px] bg-[#E1EEF4] transition-all hover:shadow-xl hover:shadow-[#1F5A7A]/10"
         >
           <div className="relative aspect-[4/3] w-full overflow-hidden">
             <Image
-              src="/brand/box-seasoning-salt.webp"
-              alt="Grown Seasoning Salt 5-pack box"
+              src="/brand/box-seafood.webp"
+              alt="Grown Seafood Seasoning 5-pack box"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#e8f5e9] via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#E1EEF4] via-transparent to-transparent" />
           </div>
           <div className="relative z-10 p-8 md:p-10">
-            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#2e7d32]">
+            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#1F5A7A]">
               SKU 01
             </div>
             <div className="serif mt-1 text-3xl text-[#0d0d0d]">
-              Seasoning Salt
+              Seafood Seasoning
             </div>
             <p className="mt-2 text-base text-[#0d0d0d]/70">
-              The everyday finisher. Savory, herby, dosed to the pinch.
+              Bay-style spice for shrimp, crab, fish and fries.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-[#0d0d0d]/80">
               <li className="flex items-center gap-3">
-                <CheckIcon color="#2e7d32" />{" "}
+                <CheckIcon color="#1F5A7A" />{" "}
                 <span className="font-medium">5mg THC</span> per sachet
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon color="#2e7d32" /> Single-serve, no measuring
+                <CheckIcon color="#1F5A7A" /> Single-serve, no measuring
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon color="#2e7d32" /> Sold in 5-packs
+                <CheckIcon color="#1F5A7A" /> Sold in 5-packs
               </li>
             </ul>
           </div>
@@ -263,9 +263,9 @@ export default function HomePage() {
             </label>
             <div className="grid grid-cols-2 gap-4">
               <SelectButton
-                active={interests.has("seasoning-salt")}
-                onClick={() => toggleInterest("seasoning-salt")}
-                label="Seasoning Salt"
+                active={interests.has("seafood-seasoning")}
+                onClick={() => toggleInterest("seafood-seasoning")}
+                label="Seafood Seasoning"
               />
               <SelectButton
                 active={interests.has("chili-lime")}
