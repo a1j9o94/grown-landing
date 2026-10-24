@@ -44,9 +44,9 @@ export default function AboutPage() {
                 Ingredients First
               </h3>
               <p className="mt-3 text-[#0D0D0D]/70">
-                We start with premium cooking oils and finishing salts, then add
-                THC. Never the other way around. The result is a product you
-                actually want to cook with.
+                We start with seasonings worth cooking with, then add THC.
+                Never the other way around. The goal is a product you actually
+                want to cook with.
               </p>
             </div>
           </div>
@@ -103,9 +103,9 @@ export default function AboutPage() {
                 Transparent Quality
               </h3>
               <p className="mt-3 text-[#0D0D0D]/70">
-                Third-party tested. No solvents. No junk. We believe if you
-                wouldn&apos;t cook with an ingredient sober, you shouldn&apos;t
-                cook with it elevated.
+                We believe if you wouldn&apos;t cook with an ingredient
+                sober, you shouldn&apos;t cook with it elevated. Independent
+                lab testing is planned before launch.
               </p>
             </div>
           </div>
@@ -119,8 +119,8 @@ export default function AboutPage() {
           <p className="mt-4 text-[#F7F3E8]/70">
             We&apos;re launching in Illinois first—a state with one of the
             most mature and well-regulated cannabis markets in the country.
-            Every batch is produced and tested in accordance with
-            Illinois regulations.
+            We plan to produce and test in accordance with Illinois
+            regulations.
           </p>
           <p className="mt-4 text-[#F7F3E8]/70">
             Expansion to additional states is on the roadmap, but we&apos;re

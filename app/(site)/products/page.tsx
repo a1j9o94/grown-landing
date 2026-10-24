@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Products | Grown",
   description:
-    "THC-infused seasoning salt and chili-lime seasoning in single-serve 5mg sachets. Pantry staples for dinner parties, not dorm rooms.",
+    "THC-infused Cajun seasoning and chili-lime seasoning in single-serve 5mg sachets. Pantry staples for dinner parties, not dorm rooms.",
 };
 
 function CheckIcon({ color = "#2e7d32" }: { color?: string }) {
@@ -37,62 +37,62 @@ export default function ProductsPage() {
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-lg text-[#0d0d0d]/70">
           Seasoning staples designed for dinner parties, not dorm rooms.
-          Chef-grade ingredients with precise, reliable dosing.
+          Single-serve sachets planned around a 5mg serving.
         </p>
       </div>
 
-      {/* SKU 01: Seasoning Salt */}
+      {/* SKU 01: Cajun Seasoning */}
       <section
-        id="seasoning-salt"
-        className="mb-12 overflow-hidden rounded-[32px] bg-[#e8f5e9]"
+        id="cajun-seasoning"
+        className="mb-12 overflow-hidden rounded-[32px] bg-[#F6E3E1]"
       >
         <div className="grid items-center gap-8 p-8 md:grid-cols-2 md:p-12">
           <div className="relative aspect-[2/3] w-full max-w-sm overflow-hidden rounded-[24px] shadow-xl shadow-[#0d0d0d]/10 max-md:mx-auto">
             <Image
-              src="/brand/sachet-seasoning-salt.webp"
-              alt="Grown THC Infused Seasoning Salt - single-serve sachet"
+              src="/brand/sachet-cajun.webp"
+              alt="Grown THC Infused Cajun Seasoning - single-serve sachet"
               fill
               className="object-cover"
             />
           </div>
           <div>
-            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#2e7d32]">
+            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#7A1F2B]">
               SKU 01 • Launch
             </div>
             <h2 className="serif mt-2 text-4xl text-[#0d0d0d]">
-              Seasoning Salt
+              Cajun Seasoning
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[#0d0d0d]/70">
-              The everyday finisher. A savory, herby blend that lands on
-              everything from eggs to roasted vegetables - dosed to the pinch,
-              so the math is always done for you.
+              A working name for a savory Cajun-style seasoning. Made for
+              chicken, potatoes, vegetables, burgers and shrimp. Planned as a single-serve 5mg
+              sachet; formulation is still in development.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-[#0d0d0d]/80">
               <li className="flex items-center gap-3">
-                <CheckIcon color="#2e7d32" />
+                <CheckIcon color="#7A1F2B" />
                 <span>
-                  <span className="font-medium">5mg THC</span> per sachet
+                  <span className="font-medium">5mg THC</span> target per sachet
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon color="#2e7d32" />
+                <CheckIcon color="#7A1F2B" />
                 <span>Single-serve - no measuring, no guesswork</span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon color="#2e7d32" />
+                <CheckIcon color="#7A1F2B" />
                 <span>Sold in 5-packs</span>
               </li>
             </ul>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
                 href="/#waitlist"
-                className="inline-flex items-center justify-center rounded-full bg-[#2e7d32] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#1b5e20]"
+                className="inline-flex items-center justify-center rounded-full bg-[#7A1F2B] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#5C1620]"
               >
                 Join the list for launch
               </Link>
               <Link
-                href="/products/seasoning-salt"
-                className="text-sm font-medium text-[#2e7d32] transition-colors hover:text-[#1b5e20]"
+                href="/products/cajun-seasoning"
+                className="text-sm font-medium text-[#7A1F2B] transition-colors hover:text-[#5C1620]"
               >
                 Product details
               </Link>
@@ -133,7 +133,7 @@ export default function ProductsPage() {
               <li className="flex items-center gap-3">
                 <CheckIcon color="#e65c00" />
                 <span>
-                  <span className="font-medium">5mg THC</span> per sachet
+                  <span className="font-medium">5mg THC</span> target per sachet
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -166,11 +166,11 @@ export default function ProductsPage() {
       {/* Testing & Quality strip */}
       <section className="rounded-[32px] border border-[#0d0d0d]/10 p-8 text-center md:p-12">
         <h3 className="serif text-2xl text-[#0d0d0d]">
-          Tested like we&apos;re feeding our own friends. Because we are.
+          Quality comes first.
         </h3>
         <p className="mx-auto mt-3 max-w-xl text-sm text-[#0d0d0d]/60">
-          Every batch is third-party tested for potency and purity, with COAs
-          you can actually read.
+          Independent lab testing for potency and purity is planned for every
+          batch before launch.
         </p>
         <Link
           href="/products/testing-and-quality"

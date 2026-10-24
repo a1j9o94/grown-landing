@@ -117,7 +117,7 @@ export default function RecipesPage() {
         <section className="rounded-[24px] border border-[#0D0D0D]/10 bg-white/50 p-8 text-center md:p-12">
           <h2 className="serif text-2xl text-[#0D0D0D]">Recipes Coming Soon</h2>
           <p className="mx-auto mt-4 max-w-md text-[#0D0D0D]/60">
-            We&apos;re crafting a collection of chef-tested recipes perfect for
+            We&apos;re crafting a collection of recipes perfect for
             cooking with THC seasonings. Join the waitlist to be notified when
             they launch.
           </p>

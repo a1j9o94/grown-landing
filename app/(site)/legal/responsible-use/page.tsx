@@ -36,14 +36,14 @@ export default function ResponsibleUsePage() {
             </h2>
             <p className="mt-4">
               Edibles take longer to take effect than other consumption methods.
-              Effects can take 30 minutes to 2 hours to onset, depending on your
-              metabolism and whether you&apos;ve eaten.
+              Timing varies by person and by meal, and can be longer than you
+              expect. Final timing guidance will follow the product label.
             </p>
             <ul className="mt-4 list-disc space-y-2 pl-6">
               <li>Start with a low dose (5mg or less for new users)</li>
-              <li>Wait at least 2 hours before consuming more</li>
+              <li>Wait before consuming more and follow the product label</li>
               <li>
-                Effects can last 4-8 hours, with peak effects around 2-3 hours
+                Effects can last several hours; plan accordingly
               </li>
             </ul>
           </section>
@@ -54,7 +54,7 @@ export default function ResponsibleUsePage() {
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl border border-[#0D0D0D]/10 p-4">
                 <h3 className="font-semibold text-[#0D0D0D]">
-                  Grown Seasoning Salt
+                  Grown Cajun Seasoning
                 </h3>
                 <p className="mt-2 text-sm">5mg THC per sachet</p>
               </div>

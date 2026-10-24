@@ -3,15 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "THC Seasoning Salt | Grown",
+  title: "THC Cajun Seasoning | Grown",
   description:
-    "A savory, herby seasoning salt in single-serve sachets. 5mg THC per sachet, sold in 5-packs. No measuring, no guesswork.",
+    "A savory Cajun-style seasoning in single-serve sachets. 5mg THC per sachet, sold in 5-packs. No measuring, no guesswork.",
 };
 
 function CheckIcon() {
   return (
     <svg
-      className="h-4 w-4 text-[#2E7D32]"
+      className="h-4 w-4 text-[#7A1F2B]"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -26,7 +26,7 @@ function CheckIcon() {
   );
 }
 
-export default function SeasoningSaltPage() {
+export default function CajunSeasoningPage() {
   return (
     <div className="py-12 md:py-20">
       {/* Breadcrumb */}
@@ -35,15 +35,15 @@ export default function SeasoningSaltPage() {
           Products
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#0D0D0D]">Seasoning Salt</span>
+        <span className="text-[#0D0D0D]">Cajun Seasoning</span>
       </nav>
 
       <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
         {/* Product Image */}
-        <div className="relative aspect-square overflow-hidden rounded-[32px] bg-[#E8F5E9]">
+        <div className="relative aspect-square overflow-hidden rounded-[32px] bg-[#F6E3E1]">
           <Image
-            src="/brand/box-seasoning-salt.webp"
-            alt="Grown THC Seasoning Salt 5-pack box"
+            src="/brand/box-cajun.webp"
+            alt="Grown THC Cajun Seasoning 5-pack box"
             fill
             className="object-cover"
             priority
@@ -53,12 +53,12 @@ export default function SeasoningSaltPage() {
         {/* Product Info */}
         <div className="lg:py-8">
           <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
-            Seasoning Salt
+            Cajun Seasoning
           </h1>
           <p className="mt-4 text-lg text-[#0D0D0D]/70">
-            The everyday finisher. A savory, herby blend that lands on
-            everything from eggs to roasted vegetables - dosed to the sachet,
-            so the math is always done for you.
+            A working name for a savory Cajun-style seasoning, made for
+            chicken, potatoes, vegetables, burgers and shrimp. Planned as a single-serve 5mg sachet,
+            so the math is done for you. Formulation is still in development.
           </p>
 
           {/* Specs */}
@@ -68,7 +68,7 @@ export default function SeasoningSaltPage() {
                 5mg
               </div>
               <div className="mt-1 text-xs text-[#0D0D0D]/60">
-                THC per sachet
+                THC per sachet (target)
               </div>
             </div>
             <div className="text-center border-x border-[#0D0D0D]/10">
@@ -84,7 +84,7 @@ export default function SeasoningSaltPage() {
                 1
               </div>
               <div className="mt-1 text-xs text-[#0D0D0D]/60">
-                Serving, every time
+                Serving per sachet
               </div>
             </div>
           </div>
@@ -106,10 +106,10 @@ export default function SeasoningSaltPage() {
               <CheckIcon />
               <div>
                 <span className="font-medium text-[#0D0D0D]">
-                  Precise 5mg dosing
+                  5mg THC target per sachet
                 </span>
                 <p className="mt-1 text-sm text-[#0D0D0D]/60">
-                  Every sachet delivers the same experience, plate after plate
+                  Designed as one planned 5mg serving. Final formulation and fill are still in development
                 </p>
               </div>
             </li>
@@ -129,10 +129,10 @@ export default function SeasoningSaltPage() {
               <CheckIcon />
               <div>
                 <span className="font-medium text-[#0D0D0D]">
-                  Third-party tested
+                  Lab testing planned
                 </span>
                 <p className="mt-1 text-sm text-[#0D0D0D]/60">
-                  Every batch verified for potency and purity
+                  Independent potency and purity testing is planned for every batch before launch
                 </p>
               </div>
             </li>
@@ -158,14 +158,14 @@ export default function SeasoningSaltPage() {
         <h2 className="serif text-2xl text-[#0D0D0D]">Learn More</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Link
-            href="/learn/using-thc-salt"
+            href="/learn/using-thc-cajun-seasoning"
             className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
             <h3 className="font-semibold text-[#0D0D0D]">
-              Using THC Seasoning Salt
+              Using THC Cajun Seasoning
             </h3>
             <p className="mt-2 text-sm text-[#0D0D0D]/60">
-              Master the art of finishing with seasoning salt.
+              How to finish chicken, potatoes and vegetables at the table.
             </p>
           </Link>
           <Link
