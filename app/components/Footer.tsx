@@ -45,10 +45,10 @@ export function Footer() {
             <ul className="mt-4 space-y-3 text-sm">
               <li>
                 <Link
-                  href="/products#seafood-seasoning"
+                  href="/products#cajun-seasoning"
                   className="text-[#0D0D0D]/70 transition-colors hover:text-[#0D0D0D]"
                 >
-                  Seafood Seasoning
+                  Cajun Seasoning
                 </Link>
               </li>
               <li>

@@ -3,15 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "THC Seafood Seasoning | Grown",
+  title: "THC Cajun Seasoning | Grown",
   description:
-    "A bay-style seafood seasoning in single-serve sachets. 5mg THC per sachet, sold in 5-packs. No measuring, no guesswork.",
+    "A savory Cajun-style seasoning in single-serve sachets. 5mg THC per sachet, sold in 5-packs. No measuring, no guesswork.",
 };
 
 function CheckIcon() {
   return (
     <svg
-      className="h-4 w-4 text-[#1F5A7A]"
+      className="h-4 w-4 text-[#7A1F2B]"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -26,7 +26,7 @@ function CheckIcon() {
   );
 }
 
-export default function SeafoodSeasoningPage() {
+export default function CajunSeasoningPage() {
   return (
     <div className="py-12 md:py-20">
       {/* Breadcrumb */}
@@ -35,15 +35,15 @@ export default function SeafoodSeasoningPage() {
           Products
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-[#0D0D0D]">Seafood Seasoning</span>
+        <span className="text-[#0D0D0D]">Cajun Seasoning</span>
       </nav>
 
       <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
         {/* Product Image */}
-        <div className="relative aspect-square overflow-hidden rounded-[32px] bg-[#E1EEF4]">
+        <div className="relative aspect-square overflow-hidden rounded-[32px] bg-[#F6E3E1]">
           <Image
-            src="/brand/box-seafood.webp"
-            alt="Grown THC Seafood Seasoning 5-pack box"
+            src="/brand/box-cajun.webp"
+            alt="Grown THC Cajun Seasoning 5-pack box"
             fill
             className="object-cover"
             priority
@@ -53,11 +53,11 @@ export default function SeafoodSeasoningPage() {
         {/* Product Info */}
         <div className="lg:py-8">
           <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
-            Seafood Seasoning
+            Cajun Seasoning
           </h1>
           <p className="mt-4 text-lg text-[#0D0D0D]/70">
-            A working name for a bay-style seafood seasoning, made for
-            shrimp, crab, fish and fries. Planned as a single-serve 5mg sachet,
+            A working name for a savory Cajun-style seasoning, made for
+            chicken, potatoes, vegetables, burgers and shrimp. Planned as a single-serve 5mg sachet,
             so the math is done for you. Formulation is still in development.
           </p>
 
@@ -158,14 +158,14 @@ export default function SeafoodSeasoningPage() {
         <h2 className="serif text-2xl text-[#0D0D0D]">Learn More</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Link
-            href="/learn/using-thc-seafood-seasoning"
+            href="/learn/using-thc-cajun-seasoning"
             className="rounded-2xl border border-[#0D0D0D]/10 bg-white/50 p-6 transition-all hover:border-[#0D0D0D]/20 hover:shadow-md"
           >
             <h3 className="font-semibold text-[#0D0D0D]">
-              Using THC Seafood Seasoning
+              Using THC Cajun Seasoning
             </h3>
             <p className="mt-2 text-sm text-[#0D0D0D]/60">
-              How to finish seafood, fries and sides at the table.
+              How to finish chicken, potatoes and vegetables at the table.
             </p>
           </Link>
           <Link

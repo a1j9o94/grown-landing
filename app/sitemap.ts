@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/products/seafood-seasoning`,
+      url: `${BASE_URL}/products/cajun-seasoning`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

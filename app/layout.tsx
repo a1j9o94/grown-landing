@@ -16,13 +16,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://grownthc.com"),
   title: {
-    default: "Grown | THC-Infused Seafood Seasoning & Chili-Lime",
+    default: "Grown | THC-Infused Cajun Seasoning & Chili-Lime",
     template: "%s | Grown",
   },
   description:
-    "THC-infused seafood seasoning and chili-lime seasoning in single-serve 5mg sachets. Designed for dinner parties, not dorm rooms. Launching in Illinois.",
+    "THC-infused Cajun seasoning and chili-lime seasoning in single-serve 5mg sachets. Designed for dinner parties, not dorm rooms. Launching in Illinois.",
   keywords: [
-    "THC seafood seasoning",
+    "THC Cajun seasoning",
     "THC chili-lime seasoning",
     "cannabis cooking",
     "edibles",
@@ -54,23 +54,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://grownthc.com",
     siteName: "Grown",
-    title: "Grown | THC-Infused Seafood Seasoning & Chili-Lime",
+    title: "Grown | THC-Infused Cajun Seasoning & Chili-Lime",
     description:
-      "THC-infused seafood seasoning and chili-lime seasoning in single-serve 5mg sachets. Designed for dinner parties, not dorm rooms.",
+      "THC-infused Cajun seasoning and chili-lime seasoning in single-serve 5mg sachets. Designed for dinner parties, not dorm rooms.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Grown - THC-Infused Seafood Seasoning & Chili-Lime",
+        alt: "Grown - THC-Infused Cajun Seasoning & Chili-Lime",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Grown | THC-Infused Seafood Seasoning & Chili-Lime",
+    title: "Grown | THC-Infused Cajun Seasoning & Chili-Lime",
     description:
-      "THC-infused seafood seasoning and chili-lime seasoning in single-serve 5mg sachets. Designed for dinner parties, not dorm rooms.",
+      "THC-infused Cajun seasoning and chili-lime seasoning in single-serve 5mg sachets. Designed for dinner parties, not dorm rooms.",
     images: ["/og-image.jpg"],
   },
   verification: {

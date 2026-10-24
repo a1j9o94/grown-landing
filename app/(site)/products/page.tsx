@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Products | Grown",
   description:
-    "THC-infused seafood seasoning and chili-lime seasoning in single-serve 5mg sachets. Pantry staples for dinner parties, not dorm rooms.",
+    "THC-infused Cajun seasoning and chili-lime seasoning in single-serve 5mg sachets. Pantry staples for dinner parties, not dorm rooms.",
 };
 
 function CheckIcon({ color = "#2e7d32" }: { color?: string }) {
@@ -41,58 +41,58 @@ export default function ProductsPage() {
         </p>
       </div>
 
-      {/* SKU 01: Seafood Seasoning */}
+      {/* SKU 01: Cajun Seasoning */}
       <section
-        id="seafood-seasoning"
-        className="mb-12 overflow-hidden rounded-[32px] bg-[#E1EEF4]"
+        id="cajun-seasoning"
+        className="mb-12 overflow-hidden rounded-[32px] bg-[#F6E3E1]"
       >
         <div className="grid items-center gap-8 p-8 md:grid-cols-2 md:p-12">
           <div className="relative aspect-[2/3] w-full max-w-sm overflow-hidden rounded-[24px] shadow-xl shadow-[#0d0d0d]/10 max-md:mx-auto">
             <Image
-              src="/brand/sachet-seafood.webp"
-              alt="Grown THC Infused Seafood Seasoning - single-serve sachet"
+              src="/brand/sachet-cajun.webp"
+              alt="Grown THC Infused Cajun Seasoning - single-serve sachet"
               fill
               className="object-cover"
             />
           </div>
           <div>
-            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#1F5A7A]">
+            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#7A1F2B]">
               SKU 01 • Launch
             </div>
             <h2 className="serif mt-2 text-4xl text-[#0d0d0d]">
-              Seafood Seasoning
+              Cajun Seasoning
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[#0d0d0d]/70">
-              A working name for a bay-style seafood seasoning. Made for
-              shrimp, crab, fish and fries. Planned as a single-serve 5mg
+              A working name for a savory Cajun-style seasoning. Made for
+              chicken, potatoes, vegetables, burgers and shrimp. Planned as a single-serve 5mg
               sachet; formulation is still in development.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-[#0d0d0d]/80">
               <li className="flex items-center gap-3">
-                <CheckIcon color="#1F5A7A" />
+                <CheckIcon color="#7A1F2B" />
                 <span>
                   <span className="font-medium">5mg THC</span> target per sachet
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon color="#1F5A7A" />
+                <CheckIcon color="#7A1F2B" />
                 <span>Single-serve - no measuring, no guesswork</span>
               </li>
               <li className="flex items-center gap-3">
-                <CheckIcon color="#1F5A7A" />
+                <CheckIcon color="#7A1F2B" />
                 <span>Sold in 5-packs</span>
               </li>
             </ul>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
                 href="/#waitlist"
-                className="inline-flex items-center justify-center rounded-full bg-[#1F5A7A] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#174559]"
+                className="inline-flex items-center justify-center rounded-full bg-[#7A1F2B] px-6 py-3 text-sm font-medium text-[#f7f3e8] transition-colors hover:bg-[#5C1620]"
               >
                 Join the list for launch
               </Link>
               <Link
-                href="/products/seafood-seasoning"
-                className="text-sm font-medium text-[#1F5A7A] transition-colors hover:text-[#174559]"
+                href="/products/cajun-seasoning"
+                className="text-sm font-medium text-[#7A1F2B] transition-colors hover:text-[#5C1620]"
               >
                 Product details
               </Link>

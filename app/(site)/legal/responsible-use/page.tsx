@@ -54,7 +54,7 @@ export default function ResponsibleUsePage() {
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl border border-[#0D0D0D]/10 p-4">
                 <h3 className="font-semibold text-[#0D0D0D]">
-                  Grown Seafood Seasoning
+                  Grown Cajun Seasoning
                 </h3>
                 <p className="mt-2 text-sm">5mg THC per sachet</p>
               </div>

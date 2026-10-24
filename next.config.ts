@@ -13,17 +13,17 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/products/thc-salt",
-        destination: "/products/seafood-seasoning",
+        destination: "/products/cajun-seasoning",
         permanent: true,
       },
       {
         source: "/products/seasoning-salt",
-        destination: "/products/seafood-seasoning",
+        destination: "/products/cajun-seasoning",
         permanent: false,
       },
       {
         source: "/learn/using-thc-salt",
-        destination: "/learn/using-thc-seafood-seasoning",
+        destination: "/learn/using-thc-cajun-seasoning",
         permanent: false,
       },
       // Legacy learn slugs
