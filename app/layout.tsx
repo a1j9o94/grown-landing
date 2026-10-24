@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     "cannabis cooking",
     "edibles",
     "THC sachets",
-    "infused oil",
     "cannabis recipes",
     "Illinois THC",
     "adult edibles",

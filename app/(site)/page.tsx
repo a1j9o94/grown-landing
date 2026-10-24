@@ -172,7 +172,7 @@ export default function HomePage() {
             <ul className="mt-6 space-y-3 text-sm text-[#0d0d0d]/80">
               <li className="flex items-center gap-3">
                 <CheckIcon color="#1F5A7A" />{" "}
-                <span className="font-medium">5mg THC</span> per sachet
+                <span className="font-medium">5mg THC</span> target per sachet
               </li>
               <li className="flex items-center gap-3">
                 <CheckIcon color="#1F5A7A" /> Single-serve, no measuring
@@ -212,7 +212,7 @@ export default function HomePage() {
             <ul className="mt-6 space-y-3 text-sm text-[#0d0d0d]/80">
               <li className="flex items-center gap-3">
                 <CheckIcon color="#e65c00" />{" "}
-                <span className="font-medium">5mg THC</span> per sachet
+                <span className="font-medium">5mg THC</span> target per sachet
               </li>
               <li className="flex items-center gap-3">
                 <CheckIcon color="#e65c00" /> Single-serve, no measuring
@@ -231,14 +231,14 @@ export default function HomePage() {
         className="my-24 border-y border-[#0d0d0d]/10 py-16 text-center"
       >
         <h2 className="serif text-3xl text-[#0d0d0d] md:text-4xl">
-          &ldquo;Finally, edibles that respect <br className="hidden md:block" />{" "}
-          my kitchen counter.&rdquo;
+          Season at the table.{" "}
+          <br className="hidden md:block" /> One sachet per plate.
         </h2>
         <div className="mt-16 grid grid-cols-2 gap-10 md:grid-cols-4">
-          <Feature label="Dosage Control" desc="5mg per sachet, every time." />
-          <Feature label="Chef Grade" desc="Ingredients first, THC second." />
+          <Feature label="Dosage Control" desc="Planned at 5mg per sachet." />
+          <Feature label="Kitchen Ready" desc="Made for real cooking." />
           <Feature label="Dinner Ready" desc="Designed to be shared." />
-          <Feature label="Clean Label" desc="No solvents, no junk." />
+          <Feature label="Single Serve" desc="One sachet, one serving." />
         </div>
       </section>
 

@@ -37,7 +37,7 @@ export default function ProductsPage() {
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-lg text-[#0d0d0d]/70">
           Seasoning staples designed for dinner parties, not dorm rooms.
-          Chef-grade ingredients with precise, reliable dosing.
+          Single-serve sachets planned around a 5mg serving.
         </p>
       </div>
 
@@ -63,15 +63,15 @@ export default function ProductsPage() {
               Seafood Seasoning
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[#0d0d0d]/70">
-              A working name for a bay-style blend of celery, paprika and
-              pepper. Made for shrimp, crab, fish and fries - dosed to the
-              sachet, so the math is always done for you.
+              A working name for a bay-style seafood seasoning. Made for
+              shrimp, crab, fish and fries. Planned as a single-serve 5mg
+              sachet; formulation is still in development.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-[#0d0d0d]/80">
               <li className="flex items-center gap-3">
                 <CheckIcon color="#1F5A7A" />
                 <span>
-                  <span className="font-medium">5mg THC</span> per sachet
+                  <span className="font-medium">5mg THC</span> target per sachet
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -133,7 +133,7 @@ export default function ProductsPage() {
               <li className="flex items-center gap-3">
                 <CheckIcon color="#e65c00" />
                 <span>
-                  <span className="font-medium">5mg THC</span> per sachet
+                  <span className="font-medium">5mg THC</span> target per sachet
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -166,11 +166,11 @@ export default function ProductsPage() {
       {/* Testing & Quality strip */}
       <section className="rounded-[32px] border border-[#0d0d0d]/10 p-8 text-center md:p-12">
         <h3 className="serif text-2xl text-[#0d0d0d]">
-          Tested like we&apos;re feeding our own friends. Because we are.
+          Quality comes first.
         </h3>
         <p className="mx-auto mt-3 max-w-xl text-sm text-[#0d0d0d]/60">
-          Every batch is third-party tested for potency and purity, with COAs
-          you can actually read.
+          Independent lab testing for potency and purity is planned for every
+          batch before launch.
         </p>
         <Link
           href="/products/testing-and-quality"

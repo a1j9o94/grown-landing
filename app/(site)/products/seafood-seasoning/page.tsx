@@ -56,9 +56,9 @@ export default function SeafoodSeasoningPage() {
             Seafood Seasoning
           </h1>
           <p className="mt-4 text-lg text-[#0D0D0D]/70">
-            A working name for a bay-style blend of celery, paprika and
-            pepper, made for shrimp, crab, fish and fries - dosed to the
-            sachet, so the math is always done for you.
+            A working name for a bay-style seafood seasoning, made for
+            shrimp, crab, fish and fries. Planned as a single-serve 5mg sachet,
+            so the math is done for you. Formulation is still in development.
           </p>
 
           {/* Specs */}
@@ -68,7 +68,7 @@ export default function SeafoodSeasoningPage() {
                 5mg
               </div>
               <div className="mt-1 text-xs text-[#0D0D0D]/60">
-                THC per sachet
+                THC per sachet (target)
               </div>
             </div>
             <div className="text-center border-x border-[#0D0D0D]/10">
@@ -84,7 +84,7 @@ export default function SeafoodSeasoningPage() {
                 1
               </div>
               <div className="mt-1 text-xs text-[#0D0D0D]/60">
-                Serving, every time
+                Serving per sachet
               </div>
             </div>
           </div>
@@ -106,10 +106,10 @@ export default function SeafoodSeasoningPage() {
               <CheckIcon />
               <div>
                 <span className="font-medium text-[#0D0D0D]">
-                  Precise 5mg dosing
+                  5mg THC target per sachet
                 </span>
                 <p className="mt-1 text-sm text-[#0D0D0D]/60">
-                  Every sachet delivers the same experience, plate after plate
+                  Designed as one planned 5mg serving. Final formulation and fill are still in development
                 </p>
               </div>
             </li>
@@ -129,10 +129,10 @@ export default function SeafoodSeasoningPage() {
               <CheckIcon />
               <div>
                 <span className="font-medium text-[#0D0D0D]">
-                  Third-party tested
+                  Lab testing planned
                 </span>
                 <p className="mt-1 text-sm text-[#0D0D0D]/60">
-                  Every batch verified for potency and purity
+                  Independent potency and purity testing is planned for every batch before launch
                 </p>
               </div>
             </li>

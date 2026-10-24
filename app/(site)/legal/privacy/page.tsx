@@ -36,7 +36,7 @@ export default function PrivacyPage() {
             <ul className="mt-4 list-disc space-y-2 pl-6">
               <li>Email address (when joining our waitlist)</li>
               <li>ZIP code (optional, to understand regional interest)</li>
-              <li>Product preferences (oil, salt, or both)</li>
+              <li>Product preferences (seafood seasoning, chili-lime, or both)</li>
             </ul>
             <p className="mt-4">
               We also automatically collect certain information when you visit

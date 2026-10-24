@@ -58,12 +58,12 @@ export default function TestingQualityPage() {
       {/* Hero */}
       <div className="mb-16 max-w-3xl">
         <h1 className="serif text-4xl text-[#0D0D0D] md:text-5xl">
-          Quality You Can Trust
+          Our Quality Plan
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-[#0D0D0D]/70">
-          Every Grown product undergoes rigorous third-party testing before it
-          reaches your kitchen. We believe transparency and consistency are
-          non-negotiable when it comes to THC products.
+          Grown is still in development. This page describes the testing we plan
+          to do before any product reaches your kitchen. We believe transparency
+          and consistency matter when it comes to THC products.
         </p>
       </div>
 
@@ -72,40 +72,40 @@ export default function TestingQualityPage() {
         <div className="rounded-[24px] bg-white/50 p-8">
           <ShieldIcon />
           <h3 className="mt-6 text-xl font-semibold text-[#0D0D0D]">
-            Third-Party Tested
+            Planned Third-Party Testing
           </h3>
           <p className="mt-3 text-[#0D0D0D]/70">
-            Every batch is tested by independent, state-licensed laboratories
-            for potency, purity, and safety.
+            We plan to have every batch tested by independent, state-licensed
+            laboratories for potency, purity, and safety.
           </p>
         </div>
 
         <div className="rounded-[24px] bg-white/50 p-8">
           <ShieldIcon />
           <h3 className="mt-6 text-xl font-semibold text-[#0D0D0D]">
-            Consistent Dosing
+            Dosing Goal
           </h3>
           <p className="mt-3 text-[#0D0D0D]/70">
-            Our precision manufacturing process ensures the same experience
-            every time. No surprises, just reliable results.
+            Each sachet is designed around a 5mg THC serving. Final formulation
+            and fill will be confirmed with our manufacturer and lab results.
           </p>
         </div>
 
         <div className="rounded-[24px] bg-white/50 p-8">
           <ShieldIcon />
           <h3 className="mt-6 text-xl font-semibold text-[#0D0D0D]">
-            Clean Ingredients
+            Ingredient Standards
           </h3>
           <p className="mt-3 text-[#0D0D0D]/70">
-            No solvents, no additives, no junk. Just premium ingredients you
-            would be proud to serve at your dinner table.
+            We aim to use ingredients you would be proud to serve at your dinner
+            table. Specifications are still being finalized.
           </p>
         </div>
       </div>
 
-      {/* What We Test For */}
+      {/* What We Plan to Test For */}
       <section className="mt-24">
-        <h2 className="serif text-3xl text-[#0D0D0D]">What We Test For</h2>
+        <h2 className="serif text-3xl text-[#0D0D0D]">What We Plan to Test For</h2>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border border-[#0D0D0D]/10 bg-white/30 p-6">
             <h4 className="font-semibold text-[#0D0D0D]">Potency Analysis</h4>
